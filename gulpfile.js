@@ -30,8 +30,7 @@ gulp.task("style", function() {
     .pipe(gulpif(isDevelopment, sourcemaps.write()))
     .pipe(gulp.dest("build/css"))
     .pipe(gulpif(!isDevelopment, mincss()))
-    .pipe(gulpif(!isDevelopment, rename({suffix:".min"})))
-    .pipe(gulpif(!isDevelopment, gulp.dest("build/css")))
+    .pipe(gulpif(!isDevelopment, combine(rename({suffix:".min"}), gulp.dest("build/css"))))
 });
 
 gulp.task("html", function() {
@@ -44,8 +43,7 @@ gulp.task("html", function() {
 gulp.task("scripts", function() {
   return gulp.src('src/*.js')
     .pipe(gulp.dest('build'))
-    .pipe(gulpif(!isDevelopment, combine(uglify(), rename({suffix:".min"}))))
-    .pipe(gulpif(!isDevelopment,gulp.dest('build')))
+    .pipe(gulpif(!isDevelopment, combine(uglify(), rename({suffix:".min"}), gulp.dest('build'))))
 });
 
 gulp.task("clean", function() {
