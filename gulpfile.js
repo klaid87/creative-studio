@@ -29,22 +29,19 @@ gulp.task("style", function() {
     .on("error", notify.onError())
     .pipe(gulpif(isDevelopment, sourcemaps.write()))
     .pipe(gulp.dest("build/css"))
-    .pipe(gulpif(!isDevelopment, mincss()))
-    .pipe(gulpif(!isDevelopment, combine(rename({suffix:".min"}), gulp.dest("build/css"))))
+    .pipe(gulpif(!isDevelopment, combine(mincss(), rename({suffix:".min"}), gulp.dest("build/css"))))
 });
 
 gulp.task("html", function() {
   return gulp.src("src/*.html")
-    .pipe(gulpif(!isDevelopment, replace("/style", "/style.min")))
-    .pipe(gulpif(!isDevelopment, replace("/script", "/script.min")))
+    .pipe(gulpif(!isDevelopment, combine(replace("/style", "/style.min"), replace("/script.js", "/script.min.js"))))
     .pipe(gulp.dest("build"))
 });
 
 gulp.task("scripts", function() {
   return gulp.src('src/**/*.js')
     .pipe(gulp.dest('build'))
-    .pipe(gulpif(!isDevelopment, combine(uglify(), rename({suffix:".min"}))))
-    .pipe(gulpif(!isDevelopment, gulp.dest('build')))
+    .pipe(gulpif(!isDevelopment, combine(uglify(), rename({suffix:".min"}), gulp.dest('build'))))
 });
 
 gulp.task("copy:fonts", function() {
