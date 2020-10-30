@@ -72,7 +72,7 @@
           </p>
         </div>
         <div class="about__row row">
-          <div class="about__column">
+          <div class="about__column row__column">
             <h3 class="about__title heading">Our Story</h3>
             <p class="about__text about__text--color text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
               consequat ipsum, nec sagittis sem nibh id elit.
@@ -83,19 +83,19 @@
               per inceptos himenaeos.
             </p>
           </div>
-          <div class="about__column">
+          <div class="about__column row__column">
             <picture class="about__picture picture">
               <img class="about__image" src="http://placehold.it/450x254/" alt="Картинка, пока незнаю, что там">
             </picture>
           </div>
         </div>
-        <div class="about__row">
-          <div class="about__column">
+        <div class="about__row row">
+          <div class="about__column row__column">
             <picture class="about__picture picture">
               <img class="about__image" src="http://placehold.it/496x483/" alt="Изображение телефона и планшета">
             </picture>
           </div>
-          <div class="about__column">
+          <div class="about__column row__column">
             <h3 class="about__title heading">Our Skills</h3>
             <p class="about__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
               ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
@@ -127,12 +127,10 @@
     <section class="post">
       <h2 class="visually-hidden">Quotes of interesting people</h2>
       <div class="container">
-        <article class="post__body post-block">
-          <blockquote class="post-block__quote">
-            <q class="post-block__text">Simplicity is about subtracting the obvious and adding the meaningful</q>
-            <cite class="post-block__author">John Maeda</cite>
-          </blockquote>
-        </article>
+        <blockquote class="quote">
+            <q class="quote__text">Simplicity is about subtracting the obvious and adding the meaningful</q>
+            <cite class="quote__author">John Maeda</cite>
+        </blockquote>
       </div>
     </section>
 
@@ -255,10 +253,9 @@
     </section>
 
     <section class="post">
+      <h2 class="visually-hidden">Achievements</h2>
       <div class="container">
-        <h2 class="visually-hidden">Achievements</h2>
-        <div class="post__body achievements">
-          <ul class="achievements__list list">
+        <ul class="achievements list">
             <li class="achievements__item">
               <span class="achievements__number">6K+</span>
               <span class="achievements__text">Coffees</span>
@@ -275,7 +272,7 @@
               <span class="achievements__number">225</span>
               <span class="achievements__text">Awards</span>
             </li>
-          </ul>
+        </ul>
         </div>
       </div>
     </section>
@@ -293,84 +290,94 @@
           <ul class="service__list list">
             <li class="sevice__item">
               <strong class="sevice__title">Designing</strong>
-              <p class="sevice__description text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
-                erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              <p class="sevice__description text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                vitae
+                erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per
               </p>
             </li>
             <li class="sevice__item">
               <strong class="sevice__title">Developing</strong>
-              <p class="sevice__description text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
-                erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              <p class="sevice__description text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                vitae
+                erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per
               </p>
             </li>
             <li class="sevice__item">
               <strong class="sevice__title">Branding</strong>
-              <p class="sevice__description text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
-                erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              <p class="sevice__description text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
+                vitae
+                erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per
               </p>
             </li>
           </ul>
         </div>
-        <div class="service__row">
-          <div class="service__price price">
-            <strong class="price__title">Packege Pricing</strong>
-            <p class="price__text text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-              bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-            </p>
+        <div class="service__row row">
+          <div clas="service__column row__column">
+            <div class="service__price price">
+              <strong class="price__title">Packege Pricing</strong>
+              <p class="price__text text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+              </p>
+            </div>
           </div>
-          <table class="service__table table">
-            <tr class="table__row">
-              <th class="table__title">
-                <div class="table__title-wrapper">
-                  <span class="table__title-package">Basic</span>
-                  <span class="table__title-cost">$35</span>
-                </div>
-              </th>
-              <th class="table__title">
-                <div class="table__title-wrapper">
-                  <span class="table__title-package">Gold</span>
-                  <span class="table__title-cost">$99</span>
-                </div>
-              </th>
-              <th class="table__title">
-                <div class="table__title-wrapper">
-                  <span class="table__title-package">Silver</span>
-                  <span class="table__title-cost">$65</span>
-                </div>
-              </th>
-            </tr>
-            <tr class="table__row">
-              <td class="table__cell">First Description</td>
-              <td class="table__cell">First Description</td>
-              <td class="table__cell">First Description</td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__cell">Second Description</td>
-              <td class="table__cell">Second Description</td>
-              <td class="table__cell">Second Description</td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__cell">Third Description</td>
-              <td class="table__cell">Third Description</td>
-              <td class="table__cell">Third Description</td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__cell">Fourth Description</td>
-              <td class="table__cell">Fourth Description</td>
-              <td class="table__cell">Fourth Description</td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__cell">
-                <button class="table__button button--primary button" type="button">Purchase</button>
-              </td>
-              <td class="table__cell">
-                <button class="table__button button--primary button" type="button">Purchase</button>
-              </td>
-              <td class="table__cell">
-                <button class="table__button button--primary button" type="button">Purchase</button>
-              </td>
-            </tr>
-          </table>
+          <div class="service__column row__column">
+            <table class="service__table table">
+              <tr class="table__row">
+                <th class="table__title">
+                  <div class="table__title-wrapper">
+                    <span class="table__title-package">Basic</span>
+                    <span class="table__title-cost">$35</span>
+                  </div>
+                </th>
+                <th class="table__title">
+                  <div class="table__title-wrapper">
+                    <span class="table__title-package">Gold</span>
+                    <span class="table__title-cost">$99</span>
+                  </div>
+                </th>
+                <th class="table__title">
+                  <div class="table__title-wrapper">
+                    <span class="table__title-package">Silver</span>
+                    <span class="table__title-cost">$65</span>
+                  </div>
+                </th>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">First Description</td>
+                <td class="table__cell">First Description</td>
+                <td class="table__cell">First Description</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Second Description</td>
+                <td class="table__cell">Second Description</td>
+                <td class="table__cell">Second Description</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Third Description</td>
+                <td class="table__cell">Third Description</td>
+                <td class="table__cell">Third Description</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Fourth Description</td>
+                <td class="table__cell">Fourth Description</td>
+                <td class="table__cell">Fourth Description</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">
+                  <button class="table__button button--primary button" type="button">Purchase</button>
+                </td>
+                <td class="table__cell">
+                  <button class="table__button button--primary button" type="button">Purchase</button>
+                </td>
+                <td class="table__cell">
+                  <button class="table__button button--primary button" type="button">Purchase</button>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </section>
@@ -378,19 +385,17 @@
     <section class="post">
       <h2 class="visually-hidden">Сustomer reviews</h2>
       <div class="container">
-        <div class="post__body reviews">
+        <div class="reviews">
           <ul class="reviews__list list">
             <li class="reviews__item">
               <blockquote class="reviews__quote">
                 <cite class="reviews__author">Maria Jones</cite>
-                <q class="reviews__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                  bibendum
+                <q class="reviews__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
                   auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
                 </q>
               </blockquote>
               <picture class="reviews__picture">
-                <img class="reviews__image" src="http://placehold.it/110x110/"
-                  alt="image of the person who wrote the review">
+                <img class="reviews__image" src="http://placehold.it/110x110/" alt="image of the person who wrote the review">
               </picture>
             </li>
           </ul>
@@ -429,7 +434,7 @@
               </li>
             </ul>
           </div>
-          <div class="portfolio__button-wrapper">
+          <div class="portfolio__wrapper">
             <button class="portfolio__button portfolio__button--prev button--secondary button" type="button"><span
                 class="visually-hidden">Previous</span></button>
             <button class="portfolio__button portfolio__button--next button--secondary button" type="button"><span
@@ -532,9 +537,9 @@
     </section>
 
     <section class="post">
-      <h2 class="visually-hidden"></h2>
+      <h2 class="visually-hidden">Quote from Twitter</h2>
       <div class="container">
-        <div class="post__body twit">
+        <div class="twit">
           <p class="twit__text text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
             sagittis sem nibh id elit. Duis sed odio sit amet nibh <a class="twit__link" href="#">ow.ly/ttlwd</a>
           </p>
@@ -639,31 +644,29 @@
 
     <section class="post">
       <div class="container">
-        <div class="post__body clients">
-          <h2 class="clients__heading">Our Clients</h2>
-          <ul class="clients__list">
-            <li class="clients__item">
-              <picture class="clients__picture">
-                <img class="client__image" src="http://placehold.it/257x162/">
-              </picture>
-            </li>
-            <li class="clients__item">
-              <picture class="clients__picture">
-                <img class="client__image" src="http://placehold.it/257x162/">
-              </picture>
-            </li>
-            <li class="clients__item">
-              <picture class="clients__picture">
-                <img class="client__image" src="http://placehold.it/257x162/">
-              </picture>
-            </li>
-            <li class="clients__item">
-              <picture class="clients__picture">
-                <img class="client__image" src="http://placehold.it/257x162/">
-              </picture>
-            </li>
-          </ul>
-        </div>
+        <h2 class="clients__heading">Our Clients</h2>
+        <ul class="clients__list">
+          <li class="clients__item">
+            <picture class="clients__picture">
+              <img class="client__image" src="http://placehold.it/257x162/">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture class="clients__picture">
+              <img class="client__image" src="http://placehold.it/257x162/">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture class="clients__picture">
+              <img class="client__image" src="http://placehold.it/257x162/">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture class="clients__picture">
+              <img class="client__image" src="http://placehold.it/257x162/">
+            </picture>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -700,8 +703,7 @@
           </p>
           <ul class="contact__list list">
             <li class="contact__item">
-              <a class="contact__link contact__link--adress" href="#">13/2 Elizabeth St, Melbourne VIC 3000,
-                Australia</a>
+              <a class="contact__link contact__link--adress" href="#">13/2 Elizabeth St, Melbourne VIC 3000, Australia</a>
             </li>
             <li class="contact__item">
               <a class="contact__link contact__link--phone" href="tel:+6131468728">+61 3146 8728, +61 0987 6543</a>
@@ -716,15 +718,13 @@
 
     <section class="post">
       <h2 class="visually-hidden">Our location on the map</h2>
-      <div class="post__body location">
-
+      <div class="location">
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <p class="page-footer__copyright">© MINI 2014, All Right Reserves <span class="page-footer__line">|</span> Designed
-      By bigpsfan & Metrothemes</p>
+    <p class="page-footer__copyright">© MINI 2014, All Right Reserves <span class="page-footer__line">|</span> Designed By bigpsfan & Metrothemes</p>
     <ul class="page-footer__socials socials list">
       <li class="socials__item">
         <a class="socials__link" href="#"><span class="visually-hidden">Twitter</span></a>
