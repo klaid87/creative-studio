@@ -54,8 +54,7 @@
             </li>
           </ul>
           <div class="slider__switch switch">
-            <button class="switch__button switch__button--active button" type="button"><span
-                class="visually-hidden">1</span></button>
+            <button class="switch__button switch__button--active button" type="button"><span class="visually-hidden">1</span></button>
             <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
             <button class="switch__button button" type="button"><span class="visually-hidden">3</span></button>
           </div>
@@ -125,10 +124,10 @@
       </div>
     </section>
 
-    <section class="post post-block__section">
+    <section class="post">
       <h2 class="visually-hidden">Quotes of interesting people</h2>
       <div class="container">
-        <article class="post-block__body">
+        <article class="post__body post-block">
           <blockquote class="post-block__quote">
             <q class="post-block__text">Simplicity is about subtracting the obvious and adding the meaningful</q>
             <cite class="post-block__author">John Maeda</cite>
@@ -255,10 +254,10 @@
       </div>
     </section>
 
-    <section class="achievements__section post">
+    <section class="post">
       <div class="container">
         <h2 class="visually-hidden">Achievements</h2>
-        <div class="achievements__body">
+        <div class="post__body achievements">
           <ul class="achievements__list list">
             <li class="achievements__item">
               <span class="achievements__number">6K+</span>
@@ -290,7 +289,7 @@
             vulputate cursus a sit amet mauris.
           </p>
         </div>
-        <div class="service__row row">
+        <div class="service__row">
           <ul class="service__list list">
             <li class="sevice__item">
               <strong class="sevice__title">Designing</strong>
@@ -376,10 +375,10 @@
       </div>
     </section>
 
-    <section class="reviews__section post">
+    <section class="post">
       <h2 class="visually-hidden">Сustomer reviews</h2>
       <div class="container">
-        <div class="reviews__slider">
+        <div class="post__body reviews">
           <ul class="reviews__list list">
             <li class="reviews__item">
               <blockquote class="reviews__quote">
@@ -396,8 +395,7 @@
             </li>
           </ul>
           <div class="reviews__switch switch">
-            <button class="switch__button switch__button--active button" type="button"><span
-                class="visually-hidden">1</span></button>
+            <button class="switch__button switch__button--active button" type="button"><span class="visually-hidden">1</span></button>
             <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
             <button class="switch__button button" type="button"><span class="visually-hidden">3</span></button>
           </div>
@@ -447,31 +445,30 @@
         <div class="portfolio__row">
           <ul class="portfolio__filters filters list">
             <li class="filters__item">
-              <input id="all-work-id" class="visually-hidden" type="radio" name="radio" value="all-work" checked>
+              <input id="all-work-id" class="visually-hidden" type="radio" name="filters" value="all-work" checked>
               <label class="filters__label" for="all-work-id">All Work</label>
             </li>
             <li class="filters__item">
-              <input id="graphics-id" class="visually-hidden" type="radio" name="radio" value="graphics">
+              <input id="graphics-id" class="visually-hidden" type="radio" name="filters" value="graphics">
               <label class="filters__label" for="graphics-id">Graphick</label>
             </li>
             <li class="filters__item">
-              <input id="webdesign-id" class="visually-hidden" type="radio" name="radio" value="webdesign">
+              <input id="webdesign-id" class="visually-hidden" type="radio" name="filters" value="webdesign">
               <label class="filters__label" for="webdesign-id">webdesign</label>
             </li>
             <li class="filters__item">
-              <input id="branding-id" class="visually-hidden" type="radio" name="radio" value="branding">
+              <input id="branding-id" class="visually-hidden" type="radio" name="filters" value="branding">
               <label class="filters__label" for="branding-id">Branding</label>
             </li>
             <li class="filters__item">
-              <input id="video-id" class="visually-hidden" type="radio" name="radio" value="video">
+              <input id="video-id" class="visually-hidden" type="radio" name="filters" value="video">
               <label class=filterss__label" for="video-id">Video</label>
             </li>
             <li class="works__item">
-              <input id="photograph-id" class="visually-hidden" type="radio" name="radio" value="photograph">
+              <input id="photograph-id" class="visually-hidden" type="radio" name="filters" value="photograph">
               <label class="filters__label" for="photograph-idd">Photograph</label>
             </li>
           </ul>
-          <!-- TODO -->
           <ul class="portfolio__works works list">
             <li class="works__item">
               <picture class="works__picture">
@@ -534,10 +531,10 @@
       </div>
     </section>
 
-    <section class="twit__section post">
+    <section class="post">
       <h2 class="visually-hidden"></h2>
       <div class="container">
-        <div class="twit__body">
+        <div class="post__body twit">
           <p class="twit__text text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
             sagittis sem nibh id elit. Duis sed odio sit amet nibh <a class="twit__link" href="#">ow.ly/ttlwd</a>
           </p>
@@ -562,9 +559,9 @@
             </picture>
             <div class="blog__post blog-post">
               <p class="blog-post__info">
-                <span class="blog-post__text">21 Feb ‘14</span>
-                <span class="blog-post__text">John Doe</span>
-                <span class="blog-post__text">24 Comments</span>
+                <span class="blog-post_signature">21 Feb ‘14</span>
+                <span class="blog-post_signature">John Doe</span>
+                <span class="blog-post_signature">24 Comments</span>
               </p>
               <div class="blog-post__container">
                 <h3 class="blog-post__title heading">Awesome Blog Post Title Goes Here</h3>
@@ -582,9 +579,9 @@
             </picture>
             <div class="blog__post blog-post">
               <p class="blog-post__info">
-                <span class="blog-post__text">21 Feb ‘14</span>
-                <span class="blog-post__text">John Doe</span>
-                <span class="blog-post__text">24 Comments</span>
+                <span class="blog-post_signature">21 Feb ‘14</span>
+                <span class="blog-post_signature">John Doe</span>
+                <span class="blog-post_signature">24 Comments</span>
               </p>
               <div class="blog-post__container">
                 <h3 class="blog-post__title heading">Awesome Blog Post Title Goes Here</h3>
@@ -602,9 +599,9 @@
             </picture>
             <div class="blog__post blog-post">
               <p class="blog-post__info">
-                <span class="blog-post__text">21 Feb ‘14</span>
-                <span class="blog-post__text">John Doe</span>
-                <span class="blog-post__text">24 Comments</span>
+                <span class="blog-post_signature">21 Feb ‘14</span>
+                <span class="blog-post_signature">John Doe</span>
+                <span class="blog-post_signature">24 Comments</span>
               </p>
               <div class="blog-post__container">
                 <h3 class="blog-post__title heading">Awesome Blog Post Title Goes Here</h3>
@@ -622,9 +619,9 @@
             </picture>
             <div class="blog__post blog-post">
               <p class="blog-post__info">
-                <span class="blog-post__text">21 Feb ‘14</span>
-                <span class="blog-post__text">John Doe</span>
-                <span class="blog-post__text">24 Comments</span>
+                <span class="blog-post_signature">21 Feb ‘14</span>
+                <span class="blog-post_signature">John Doe</span>
+                <span class="blog-post_signature">24 Comments</span>
               </p>
               <div class="blog-post__container">
                 <h3 class="blog-post__title heading">Awesome Blog Post Title Goes Here</h3>
@@ -640,23 +637,33 @@
       </div>
     </section>
 
-    <section class="clients__section post">
+    <section class="post">
       <div class="container">
-        <h2 class="clients__heading">Our Clients</h2>
-        <ul class="clients__list">
-          <li class="clients__item">
-            <!-- svg -->
-          </li>
-          <li class="clients__item">
-            <!-- svg -->
-          </li>
-          <li class="clients__item">
-            <!-- svg -->
-          </li>
-          <li class="clients__item">
-            <!-- svg -->
-          </li>
-        </ul>
+        <div class="post__body clients">
+          <h2 class="clients__heading">Our Clients</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <picture class="clients__picture">
+                <img class="client__image" src="http://placehold.it/257x162/">
+              </picture>
+            </li>
+            <li class="clients__item">
+              <picture class="clients__picture">
+                <img class="client__image" src="http://placehold.it/257x162/">
+              </picture>
+            </li>
+            <li class="clients__item">
+              <picture class="clients__picture">
+                <img class="client__image" src="http://placehold.it/257x162/">
+              </picture>
+            </li>
+            <li class="clients__item">
+              <picture class="clients__picture">
+                <img class="client__image" src="http://placehold.it/257x162/">
+              </picture>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -693,7 +700,7 @@
           </p>
           <ul class="contact__list list">
             <li class="contact__item">
-              <a class="contact__link contact__link--adres" href="#">13/2 Elizabeth St, Melbourne VIC 3000,
+              <a class="contact__link contact__link--adress" href="#">13/2 Elizabeth St, Melbourne VIC 3000,
                 Australia</a>
             </li>
             <li class="contact__item">
@@ -707,13 +714,16 @@
       </div>
     </section>
 
-    <section class="map post">
+    <section class="post">
       <h2 class="visually-hidden">Our location on the map</h2>
+      <div class="post__body location">
+
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <p class="page-footer__copyright">© MINI 2014, All Right Reserves<span class="page-footer__hatch">|</span>Designed
+    <p class="page-footer__copyright">© MINI 2014, All Right Reserves <span class="page-footer__line">|</span> Designed
       By bigpsfan & Metrothemes</p>
     <ul class="page-footer__socials socials list">
       <li class="socials__item">
