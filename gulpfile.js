@@ -13,6 +13,7 @@ var autoprefixer = require("autoprefixer");
 var mincss = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
+var newer = require("gulp-newer");
 var webp = require("gulp-webp");
 var uglify = require("gulp-uglify");
 var combine = require("stream-combiner2").obj;
@@ -58,6 +59,7 @@ gulp.task("copy", gulp.parallel("copy:fonts", "copy:scripts"));
 
 gulp.task("images:default", function() {
   return gulp.src("src/images/**/*.{png,jpg,svg}")
+    .pipe(newer("build/images"))
     .pipe(gulpif(!isDevelopment, imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
