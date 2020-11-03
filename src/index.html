@@ -1,13 +1,736 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
-  <title>Document</title>
+  <title>Creative-studio</title>
 </head>
+
 <body>
-  <h1>Hello world!</h1>
-  <h1>Hello world!</h1>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">Mini</a>
+        <nav class="page-header__navigation navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="#">About</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Team</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Services</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Works</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Blog</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="features">
+      <h1 class="visually-hidden">Mini. Creative Studio</h1>
+      <div class="container">
+        <div class="features__slider slider">
+          <ul class="slider__list list">
+            <li class="slider__item">
+              <p class="slider__text text">Best Creative Studio</p>
+              <h2 class="slider__heading heading">Design / Branding / WordPres</h2>
+              <p class="slider__text text">We Make Great Ideas Happen</p>
+              <a class="slider__link button--primary" href="#">Learn More</a>
+            </li>
+          </ul>
+          <div class="slider__switch switch">
+            <button class="switch__button switch__button--active button" type="button"><span class="visually-hidden">1</span></button>
+            <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
+            <button class="switch__button button" type="button"><span class="visually-hidden">3</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__description description">
+          <h2 class="description__heading heading">About</h2>
+          <p class="description__text text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+            vulputate cursus a sit amet mauris.
+          </p>
+        </div>
+        <div class="about__row row">
+          <div class="row__column">
+            <h3 class="about__title heading">Our Story</h3>
+            <p class="about__text about__text--color text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+              consequat ipsum, nec sagittis sem nibh id elit.
+            </p>
+            <p class="about__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+              Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+              erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+              per inceptos himenaeos.
+            </p>
+          </div>
+          <div class="row__column">
+            <picture class="about__picture picture">
+              <img class="about__image" src="http://placehold.it/450x254/" alt="Картинка, пока незнаю, что там">
+            </picture>
+          </div>
+        </div>
+        <div class="about__row row">
+          <div class="about__column row__column">
+            <picture class="about__picture picture">
+              <img class="about__image" src="http://placehold.it/496x483/" alt="Изображение телефона и планшета">
+            </picture>
+          </div>
+          <div class="about__column row__column">
+            <h3 class="about__title heading">Our Skills</h3>
+            <p class="about__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+              ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
+              auctor eu in elit.
+            </p>
+            <ul class="about__list list">
+              <li class="about__item">
+                <span class="about__item-text"><b>Design</b> / 88%</span>
+                <div class="about__item-scale"></div>
+              </li>
+              <li class="about__item">
+                <span class="about__item-text"><b>Development</b> / 76%</span>
+                <div class="about__item-scale"></div>
+              </li>
+              <li class="about__item">
+                <span class="about__item-text"><b>WordPress</b> / 81%</span>
+                <div class="about__item-scale"></div>
+              </li>
+              <li class="about__item">
+                <span class="about__item-text"><b>Drupal</b> / 71%</span>
+                <div class="about__item-scale"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="post">
+      <h2 class="visually-hidden">Quotes of interesting people</h2>
+      <div class="container">
+        <blockquote class="quote">
+          <q class="quote__text">Simplicity is about subtracting the obvious and adding the meaningful</q>
+          <cite class="quote__author">John Maeda</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <div class="team__description description">
+          <h2 class="description-section__heading heading">Team</h2>
+          <p class="description-section__text text">proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+            lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+            nibh vulputate cursus a sit amet mauris.
+          </p>
+        </div>
+        <ul class="team__list list">
+          <li class="team__item team-item">
+            <picture class="team-item__picture">
+              <img class="tiam-item__image" src="http://placehold.it/200x200/" alt="Employee photo">
+            </picture>
+            <strong class="team-item__name">john Doe</strong>
+            <span class="team-item__description">Founder</span>
+            <p class="team-item__text text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+            <ul class="team__socials team-socials list">
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Twitter</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Dribbble</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Gmail</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Instagram</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="team__item team-item">
+            <picture class="team-item__picture">
+              <img class="tiam-item__image" src="http://placehold.it/200x200/" alt="Employee photo">
+            </picture>
+            <strong class="team-item__name">Jesmine Doe</strong>
+              <span class="team-item__description">Designer</span>
+              <p class="team-item__text text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+              <ul class="team__socials team-socials list">
+                <li class="team-socials__item">
+                  <a class="team-socials__link" href="#"><span class="visually-hidden">Twitter</span></a>
+                </li>
+                <li class="team-socials__item">
+                  <a class="team-socials__link" href="#"><span class="visually-hidden">Facebook</span></a>
+                </li>
+                <li class="team-socials__item">
+                  <a class="team-socials__link" href="#"><span class="visually-hidden">Dribbble</span></a>
+                </li>
+                <li class="team-socials__item">
+                  <a class="team-socials__link" href="#"><span class="visually-hidden">Gmail</span></a>
+                </li>
+                <li class="team-socials__item">
+                  <a class="team-socials__link" href="#"><span class="visually-hidden">Instagram</span></a>
+                </li>
+              </ul>
+          </li>
+          <li class="team__item team-item">
+            <picture class="team-item__picture">
+              <img class="tiam-item__image" src="http://placehold.it/200x200/" alt="Employee photo">
+            </picture>
+            <strong class="team-item__name">Martin Doe</strong>
+            <span class="team-item__description">Developer</span>
+            <p class="team-item__text text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+            <ul class="team__socials team-socials list">
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Twitter</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Dribbble</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Gmail</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Instagram</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="team__item team-item">
+            <picture class="team-item__picture">
+              <img class="tiam-item__image" src="http://placehold.it/200x200/" alt="Employee photo">
+            </picture>
+            <strong class="team-item__name">Anthony Doe</strong>
+            <span class="team-item__description">Photographer</span>
+            <p class="team-item__text text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+            <ul class="team__socials team-socials list">
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Twitter</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Facebook</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Dribbble</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Gmail</span></a>
+              </li>
+              <li class="team-socials__item">
+                <a class="team-socials__link" href="#"><span class="visually-hidden">Instagram</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="post">
+      <h2 class="visually-hidden">Achievements</h2>
+      <div class="container">
+        <ul class="achievements list">
+          <li class="achievements__item">
+            <span class="achievements__number">6K+</span>
+            <span class="achievements__text">Coffees</span>
+          </li>
+          <li class="achievements__item">
+            <span class="achievements__number">743</span>
+            <span class="achievements__text">Projects</span>
+          </li>
+          <li class="achievements__item">
+            <span class="achievements__number">435</span>
+            <span class="achievements__text">Clients</span>
+          </li>
+          <li class="achievements__item">
+            <span class="achievements__number">225</span>
+            <span class="achievements__text">Awards</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="container">
+        <div class="service__description description">
+          <h2 class="description__heading heading">Service</h2>
+          <p class="description__text text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+            vulputate cursus a sit amet mauris.
+          </p>
+        </div>
+        <ul class="service__list list">
+          <li class="sevice__item">
+            <strong class="sevice__title">Designing</strong>
+            <p class="sevice__description text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+              erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </li>
+          <li class="sevice__item">
+            <strong class="sevice__title">Developing</strong>
+            <p class="sevice__description text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+              erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </li>
+          <li class="sevice__item">
+            <strong class="sevice__title">Branding</strong>
+            <p class="sevice__description text">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+              erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            </p>
+          </li>
+        </ul>
+        <div class="service__row row">
+          <div class="row__column">
+            <div class="service__price price">
+              <strong class="price__title">Package Pricing</strong>
+              <p class="price__text text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+              </p>
+            </div>
+          </div>
+          <div class="row__column">
+            <table class="service__table table">
+              <tr class="table__row">
+                <th class="table__title">
+                  <div class="table__title-wrapper">
+                    <span class="table__title-package">Basic</span>
+                    <span class="table__title-cost">$35</span>
+                  </div>
+                </th>
+                <th class="table__title">
+                  <div class="table__title-wrapper">
+                    <span class="table__title-package">Gold</span>
+                    <span class="table__title-cost">$99</span>
+                  </div>
+                </th>
+                <th class="table__title">
+                  <div class="table__title-wrapper">
+                    <span class="table__title-package">Silver</span>
+                    <span class="table__title-cost">$65</span>
+                  </div>
+                </th>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">First Description</td>
+                <td class="table__cell">First Description</td>
+                <td class="table__cell">First Description</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Second Description</td>
+                <td class="table__cell">Second Description</td>
+                <td class="table__cell">Second Description</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Third Description</td>
+                <td class="table__cell">Third Description</td>
+                <td class="table__cell">Third Description</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Fourth Description</td>
+                <td class="table__cell">Fourth Description</td>
+                <td class="table__cell">Fourth Description</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">
+                  <button class="table__button button--primary button" type="button">Purchase</button>
+                </td>
+                <td class="table__cell">
+                  <button class="table__button button--primary button" type="button">Purchase</button>
+                </td>
+                <td class="table__cell">
+                  <button class="table__button button--primary button" type="button">Purchase</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="post">
+      <h2 class="visually-hidden">Сustomer reviews</h2>
+      <div class="container">
+        <div class="reviews">
+          <ul class="reviews__list list">
+            <li class="reviews__item">
+              <blockquote class="reviews__quote">
+                <cite class="reviews__author">Maria Jones</cite>
+                <q class="reviews__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                  auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                </q>
+              </blockquote>
+              <picture class="reviews__picture">
+                <img class="reviews__image" src="http://placehold.it/110x110/"
+                  alt="image of the person who wrote the review">
+              </picture>
+            </li>
+          </ul>
+          <div class="reviews__switch switch">
+            <button class="switch__button switch__button--active button" type="button"><span class="visually-hidden">1</span></button>
+            <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
+            <button class="switch__button button" type="button"><span class="visually-hidden">3</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="visually-hidden">Company works</h2>
+        <div class="portfolio__description description">
+          <h2 class="description__heading heading">Portfolio</h2>
+          <p class="description__text text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+            vulputate cursus a sit amet mauris.
+          </p>
+        </div>
+        <div class="portfolio__slider">
+          <ul class="porfolio__list list">
+            <li class="portfolio__item">
+              <picture class="portfolio__picture">
+                <img class="portfolio__image" src="http://placehold.it/1170x580/" alt="The photo">
+              </picture>
+              <div class="portfolio__switch switch">
+                <button class="switch__button switch__button--active button" type="button"><span class="visually-hidden">1</span></button>
+                <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
+                <button class="switch__button button" type="button"><span class="visually-hidden">3</span></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="portfolio__wrapper">
+          <button class="portfolio__button portfolio__button--prev button--secondary button" type="button"><span class="visually-hidden">Previous</span></button>
+          <button class="portfolio__button portfolio__button--next button--secondary button" type="button"><span class="visually-hidden">Pext</span></button>
+          <button class="portfolio__button portfolio__button--canceling button--secondary button" type="button"><span class="visually-hidden">Cancel</span></button>
+        </div>
+        <div class="portfolio__signature">
+          <strong class="portfolio__title">Digital ArtWork</strong>
+          <span class="portfolio__description">Graphic Design</span>
+        </div>
+        <ul class="portfolio__filters filters list">
+            <li class="filters__item">
+              <input id="all-work-id" class="visually-hidden" type="radio" name="filters" value="all-work" checked>
+              <label class="filters__label" for="all-work-id">All Work</label>
+            </li>
+            <li class="filters__item">
+              <input id="graphics-id" class="visually-hidden" type="radio" name="filters" value="graphics">
+              <label class="filters__label" for="graphics-id">Graphick</label>
+            </li>
+            <li class="filters__item">
+              <input id="webdesign-id" class="visually-hidden" type="radio" name="filters" value="webdesign">
+              <label class="filters__label" for="webdesign-id">webdesign</label>
+            </li>
+            <li class="filters__item">
+              <input id="branding-id" class="visually-hidden" type="radio" name="filters" value="branding">
+              <label class="filters__label" for="branding-id">Branding</label>
+            </li>
+            <li class="filters__item">
+              <input id="video-id" class="visually-hidden" type="radio" name="filters" value="video">
+              <label class="filterss__label" for="video-id">Video</label>
+            </li>
+            <li class="works__item">
+              <input id="photograph-id" class="visually-hidden" type="radio" name="filters" value="photograph">
+              <label class="filters__label" for="photograph-id">Photograph</label>
+            </li>
+        </ul>
+        <ul class="portfolio__works works list">
+            <li class="works__item">
+              <picture class="works__picture">
+                <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+              </picture>
+              <h3 class="works__title">Project Title Here</h3>
+              <span class="works__description">Graphics</span>
+            </li>
+            <li class="works__item">
+              <picture class="works__picture">
+                <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+              </picture>
+              <h3 class="works__title">Project Title Here</h3>
+              <span class="works__description">Graphics</span>
+            </li>
+            <li class="works__item">
+              <picture class="works__picture">
+                <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+              </picture>
+              <h3 class="works__title">Project Title Here</h3>
+              <span class="works__description">Graphics</span>
+            </li>
+            <li class="works__item">
+              <picture class="works__picture">
+                <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+              </picture>
+              <h3 class="works__title">Project Title Here</h3>
+              <span class="works__description">Graphics</span>
+            </li>
+            <li class="works__item">
+              <picture class="works__picture">
+                <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+              </picture>
+              <h3 class="works__title">Project Title Here</h3>
+              <span class="works__description">Graphics</span>
+            </li>
+            <li class="works__item">
+              <picture class="works__picture">
+                <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+              </picture>
+              <h3 class="works__title">Project Title Here</h3>
+              <span class="works__description">Graphics</span>
+            </li>
+            <li class="works__item">
+              <picture class="works__picture">
+                <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+              </picture>
+              <h3 class="works__title">Project Title Here</h3>
+              <span class="works__description">Graphics</span>
+            </li>
+            <li class="works__item">
+              <picture class="works__picture">
+                <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+              </picture>
+              <h3 class="works__title">Project Title Here</h3>
+              <span class="works__description">Graphics</span>
+            </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="post">
+      <h2 class="visually-hidden">Quote from Twitter</h2>
+      <div class="container">
+        <div class="twit">
+          <p class="twit__text text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+            sagittis sem nibh id elit. Duis sed odio sit amet nibh <a class="twit__link" href="#">ow.ly/ttlwd</a>
+          </p>
+          <time class="twit__time" datetime="2020-05-18T12:10">3 hours ago</time>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="blog__description description">
+          <h2 class="description__heading heading">Portfolio</h2>
+          <p class="description__text text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+            vulputate cursus a sit amet mauris.
+          </p>
+        </div>
+        <ul class="blog__list list">
+          <li class="blog__item">
+            <picture class="blog__picture">
+              <img class="blog__image" src="http://placehold.it/555x300/" alt="blog image">
+            </picture>
+            <div class="blog__post blog-post">
+              <p class="blog-post__info">
+                <span class="blog-post_signature">21 Feb ‘14</span>
+                <span class="blog-post_signature">John Doe</span>
+                <span class="blog-post_signature">24 Comments</span>
+              </p>
+              <div class="blog-post__container">
+                <h3 class="blog-post__title heading">Awesome Blog Post Title Goes Here</h3>
+                <p class="blog-post__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+                  accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+                  consequat auctor eu in elit.
+                </p>
+                <button class="blog-post__button button--primary button" type="button">Read On</button>
+              </div>
+            </div>
+          </li>
+          <li class="blog__item">
+            <picture class="blog__picture">
+              <img class="blog__image" src="http://placehold.it/555x300/" alt="blog image">
+            </picture>
+            <div class="blog__post blog-post">
+              <p class="blog-post__info">
+                <span class="blog-post_signature">21 Feb ‘14</span>
+                <span class="blog-post_signature">John Doe</span>
+                <span class="blog-post_signature">24 Comments</span>
+              </p>
+              <div class="blog-post__container">
+                <h3 class="blog-post__title heading">Awesome Blog Post Title Goes Here</h3>
+                <p class="blog-post__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+                  accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+                  consequat auctor eu in elit.
+                </p>
+                <button class="blog-post__button button--primary button" type="button">Read On</button>
+              </div>
+            </div>
+          </li>
+          <li class="blog__item">
+            <picture class="blog__picture">
+              <img class="blog__image" src="http://placehold.it/555x300/" alt="blog image">
+            </picture>
+            <div class="blog__post blog-post">
+              <p class="blog-post__info">
+                <span class="blog-post_signature">21 Feb ‘14</span>
+                <span class="blog-post_signature">John Doe</span>
+                <span class="blog-post_signature">24 Comments</span>
+              </p>
+              <div class="blog-post__container">
+                <h3 class="blog-post__title heading">Awesome Blog Post Title Goes Here</h3>
+                <p class="blog-post__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+                  accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+                  consequat auctor eu in elit.
+                </p>
+                <button class="blog-post__button button--primary button" type="button">Read On</button>
+              </div>
+            </div>
+          </li>
+          <li class="blog__item">
+            <picture class="blog__picture">
+              <img class="blog__image" src="http://placehold.it/555x300/" alt="blog image">
+            </picture>
+            <div class="blog__post blog-post">
+              <p class="blog-post__info">
+                <span class="blog-post_signature">21 Feb ‘14</span>
+                <span class="blog-post_signature">John Doe</span>
+                <span class="blog-post_signature">24 Comments</span>
+              </p>
+              <div class="blog-post__container">
+                <h3 class="blog-post__title heading">Awesome Blog Post Title Goes Here</h3>
+                <p class="blog-post__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+                  accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+                  consequat auctor eu in elit.
+                </p>
+                <button class="blog-post__button button--primary button" type="button">Read On</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="post">
+      <div class="container">
+        <div class="clients">
+          <h2 class="clients__heading">Our Clients</h2>
+          <ul class="clients__list">
+          <li class="clients__item">
+            <picture class="clients__picture">
+              <img class="clients__image" src="http://placehold.it/257x162/" alt="Picture with logo">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture class="clients__picture">
+              <img class="clients__image" src="http://placehold.it/257x162/" alt="Picture with logo">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture class="clients__picture">
+              <img class="clients__image" src="http://placehold.it/257x162/" alt="Picture with logo">
+            </picture>
+          </li>
+          <li class="clients__item">
+            <picture class="clients__picture">
+              <img class="clients__image" src="http://placehold.it/257x162/" alt="Picture with logo">
+            </picture>
+          </li>
+          </ul>
+      </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__description description">
+          <h2 class="description__heading heading">Contact</h2>
+          <p class="description__text text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+            vulputate cursus a sit amet mauris.
+          </p>
+        </div>
+        <div class="contact__column">
+          <h3 class="contact__title heading">Drop Us A Message</h3>
+          <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="contact__wrapper-field">
+              <input class="contact__input" type="text" name="name" placeholder="Mike">
+            </p>
+            <p class="contact__wrapper-field">
+              <input class="contact__input" type="email" name="mail" placeholder="Email">
+            </p>
+            <p class="contact__wrapper-field">
+              <textarea class="contact__textarea" name="message" placeholder="Message"></textarea>
+            </p>
+            <button class="contact__button button--primar button" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="contact__column">
+          <h3 class="contact__title heading">Contact Info</h3>
+          <p class="contact__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+            ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
+            auctor eu in elit.
+          </p>
+          <ul class="contact__list list">
+            <li class="contact__item">
+              <a class="contact__link contact__link--adress" href="#">13/2 Elizabeth St, Melbourne VIC 3000, Australia</a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link contact__link--phone" href="tel:+6131468728">+61 3146 8728, +61 0987 6543</a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link contact__link--mail" href="mailto:support@envato.net">support@envato.net</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="post">
+      <h2 class="visually-hidden">Our location on the map</h2>
+      <div class="location">
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p class="page-footer__copyright">© MINI 2014, All Right Reserves <span class="page-footer__line">|</span> Designed By bigpsfan & Metrothemes</p>
+    <ul class="page-footer__socials socials list">
+      <li class="socials__item">
+        <a class="socials__link" href="#"><span class="visually-hidden">Twitter</span></a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#"><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#"><span class="visually-hidden">Instagram</span></a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#"><span class="visually-hidden">Dribbble</span></a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#"><span class="visually-hidden">Pinterest</span></a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#"><span class="visually-hidden">Gmail</span></a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#"><span class="visually-hidden">Rss</span></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
