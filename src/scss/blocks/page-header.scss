@@ -1,0 +1,29 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 84px;
+  }
+
+  &__logo {
+    font-family: "Montserrat", "Open-sans", sans-serif;
+    font-size: 45px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 153px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+  }
+}

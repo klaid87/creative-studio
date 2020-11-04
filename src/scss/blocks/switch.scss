@@ -1,0 +1,15 @@
+.switch {
+
+  &__button {
+    width: 13px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #5b6770;
+    margin-right: 5px;
+    outline: none;
+    
+    &--active {
+      background-color: #ffffff;
+    }
+  }
+}

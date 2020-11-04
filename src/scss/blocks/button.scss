@@ -1,0 +1,11 @@
+.button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+
+  &--primary {
+    border: 2px solid #f39c12;
+  }
+}

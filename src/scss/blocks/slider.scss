@@ -1,0 +1,45 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 45px;
+    line-height: 114px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    &:last-of-type {
+      margin-bottom: 90px;
+    }
+  }
+
+  &__heading {
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &__link {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #f39c12;
+    padding: 15px 38px;
+    margin-bottom: 130px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #bf7909;
+    }
+  }
+}

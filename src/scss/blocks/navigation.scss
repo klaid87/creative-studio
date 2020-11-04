@@ -1,0 +1,50 @@
+.navigation {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 50px;
+    margin-right: 40px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 13px;
+      background-color: #ffffff;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%) rotate(-15deg);
+    }
+
+    &::before {
+      right: 4px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #0d0d0d;
+    }
+  }
+}
