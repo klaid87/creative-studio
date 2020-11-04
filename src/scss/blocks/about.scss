@@ -1,7 +1,14 @@
 .about {
-
+  padding-top: 100px;
+  
   &__description {
     margin-bottom: 150px;
+  }
+
+  &__row {
+    &:nth-of-type(n + 2) {
+      border-top: 2px solid grey;
+    }
   }
 
   &__title {
