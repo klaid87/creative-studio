@@ -11,22 +11,24 @@
 
   &__text {
     font-size: 45px;
-    line-height: 114px;
     font-weight: 300;
     color: #ffffff;
     text-transform: uppercase;
+    letter-spacing: -0.6px;
+    
 
     &:last-of-type {
-      margin-bottom: 90px;
+      margin-bottom: 83px;
+      letter-spacing: -5px;
     }
   }
 
   &__heading {
     font-size: 70px;
-    line-height: 80px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
+    letter-spacing: -4.2px;
   }
 
   &__link {
@@ -34,7 +36,7 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: #f39c12;
-    padding: 15px 38px;
+    padding: 12px 34px;
     margin-bottom: 130px;
     transition: all 0.3s;
 
