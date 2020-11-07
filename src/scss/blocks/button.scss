@@ -6,6 +6,7 @@
   display: inline-block;
 
   &--primary {
-    border: 2px solid #f39c12;
+    border: 2px solid $color-yellow;
+    text-transform: uppercase;
   }
 }

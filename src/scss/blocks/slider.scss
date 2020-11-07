@@ -33,14 +33,14 @@
 
   &__link {
     font-size: 15px;
-    text-transform: uppercase;
     color: #ffffff;
     background-color: #f39c12;
     padding: 12px 34px;
     margin-bottom: 130px;
     transition: all 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #bf7909;
     }
   }

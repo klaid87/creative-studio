@@ -1,11 +1,11 @@
 .description {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 1030px;
+  margin: 0 auto;
+  padding-bottom: 150px;
 
   &__heading {
     font-size: 30px;
-    line-height: 25px;
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
@@ -14,10 +14,7 @@
 
   &__text {
     position: relative;
-    max-width: 905px;
-    line-height: 25px;
     color: #4c4c4c;
-    font-weight: 400;
     text-transform: uppercase;
     padding-left: 18px;
 
@@ -28,7 +25,7 @@
       left: 0;
       width: 4px;
       height: 100%;
-      background-color: #f39c12;
+      background-color: $color-yellow;
     }
   }
 }
