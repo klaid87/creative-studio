@@ -1,7 +1,10 @@
 .switch {
-
+  display: flex;
+  
   &__button {
-    width: 13px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 12px;
     height: 12px;
     border-radius: 50%;
     background-color: #5b6770;
