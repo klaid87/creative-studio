@@ -4,9 +4,19 @@
   border: none;
   cursor: pointer;
   display: inline-block;
+  text-transform: uppercase;
 
   &--primary {
-    border: 2px solid $color-yellow;
-    text-transform: uppercase;
+    border: 2px solid $color-orange;
+  }
+
+  &--secondary {
+    border: 2px solid #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: $color-orange;
+      border-color: $color-orange;
+    }
   }
 }

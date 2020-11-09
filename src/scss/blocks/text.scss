@@ -1,4 +1,16 @@
 .text {
   margin: 0;
   color: #0d0d0d;
+
+  &--size-xxl {
+    font-size: 45px;
+  }
+
+  &--size-xl {
+    font-size: 40px;
+  }
+
+  &--size-l {
+    font-size: 20px;
+  }
 }

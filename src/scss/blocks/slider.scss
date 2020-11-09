@@ -1,8 +1,6 @@
 .slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  position: relative;
+  
   &__item {
     display: flex;
     flex-direction: column;
@@ -10,36 +8,24 @@
   }
 
   &__text {
-    font-size: 45px;
     font-weight: 300;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: -0.6px;
-    
-
-    &:last-of-type {
-      margin-bottom: 83px;
-      letter-spacing: -5px;
-    }
   }
 
   &__heading {
-    font-size: 70px;
     color: #ffffff;
-    letter-spacing: -4.2px;
+    font-size: 70px;
+    letter-spacing: -4px;
   }
 
   &__link {
     font-size: 15px;
     color: #ffffff;
-    background-color: #f39c12;
     padding: 12px 34px;
-    margin-bottom: 130px;
+    margin: 83px 0 130px;
     transition: all 0.3s;
-
-    &:hover,
-    &:focus {
-      background-color: #bf7909;
-    }
+    text-transform: uppercase;
+    margin-top: 83px;
   }
 }
