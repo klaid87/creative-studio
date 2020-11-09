@@ -1,6 +1,6 @@
 .slider {
   position: relative;
-  
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -11,21 +11,23 @@
     font-weight: 300;
     color: #ffffff;
     text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: -2px;
   }
 
   &__heading {
     color: #ffffff;
     font-size: 70px;
     letter-spacing: -4px;
+    line-height: 1.14;
   }
 
   &__link {
     font-size: 15px;
     color: #ffffff;
-    padding: 12px 34px;
-    margin: 83px 0 130px;
+    padding: 8px 34px;
+    margin: 80px 0 130px;
     transition: all 0.3s;
     text-transform: uppercase;
-    margin-top: 83px;
   }
 }

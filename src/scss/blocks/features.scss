@@ -1,9 +1,11 @@
 .features {
-  background: url("../images/features/features-background@2x.jpg") no-repeat center;
+  background-image: url("../images/features/features-background.jpg"),
+                    url("../images/features/features-background@2x.jpg");
   background-size: cover;
-  padding: 450px 0 175px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 440px 0 185px;
   position: relative;
-  z-index: 2;
 
   &::before {
     content: "";
@@ -13,14 +15,13 @@
     top: 0;
     left: 0;
     background-color: rgba(52, 73, 94, 0.7);
-    z-index: -1;
   }
 
   &::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: 0;
     width: 100%;
     height: 100px;
     background-image: linear-gradient(to right bottom, transparent 49%, #ffffff 50%);
