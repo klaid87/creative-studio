@@ -1,6 +1,10 @@
 .features {
-  background-image: url("../images/features/features-background.jpg"),
-                    url("../images/features/features-background@2x.jpg");
+  background-image: url("../images/features/features-background.jpg");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../images/features/features-background@2x.jpg");
+  }
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

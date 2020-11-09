@@ -5,6 +5,7 @@
   cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
+  transition: all 0.3s;
 
   &--primary {
     border: 2px solid $color-orange;
