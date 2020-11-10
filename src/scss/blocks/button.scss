@@ -7,8 +7,20 @@
   text-transform: uppercase;
   transition: all 0.3s;
 
+  &--size-xl {
+    font-size: 15px;
+  }
+
+  &--size-l {
+    font-size: 14px;
+  }
+
+  &--size-m {
+    font-size: 13px;
+  }
+
   &--primary {
-    border: 2px solid $color-orange;
+    border: 2px solid $brand-color;
   }
 
   &--secondary {
@@ -16,8 +28,8 @@
 
     &:hover,
     &:focus {
-      background-color: $color-orange;
-      border-color: $color-orange;
+      background-color: $brand-color;
+      border-color: $brand-color;
     }
   }
 }

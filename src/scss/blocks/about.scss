@@ -6,13 +6,9 @@
     margin-bottom: 25px;
   }
 
-  &__text {
-    &--warning {
+  &__text { 
       max-width: 476px;
-      font-size: 20px;
       font-weight: 300;
-      color: #e74c3c;
       margin-bottom: 35px;
-    }
   }
 }

@@ -1,6 +1,10 @@
 .text {
   margin: 0;
-  color: #0d0d0d;
+  color: $text-color;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
 
   &--size-xxl {
     font-size: 45px;
@@ -12,5 +16,9 @@
 
   &--size-l {
     font-size: 20px;
+  }
+
+  &--color-error {
+    color: $text-color-error;
   }
 }

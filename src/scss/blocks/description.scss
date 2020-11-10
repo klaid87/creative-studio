@@ -9,8 +9,7 @@
 
   &__text {
     position: relative;
-    color: #4c4c4c;
-    text-transform: uppercase;
+    color: $text-color;
     padding-left: 18px;
 
     &::before {
@@ -20,7 +19,7 @@
       left: 0;
       width: 4px;
       height: 100%;
-      background-color: $color-orange;
+      background-color: $brand-color;
     }
   }
 }
