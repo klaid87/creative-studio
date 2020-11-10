@@ -1,0 +1,14 @@
+.heading {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+
+  &--size-xl {
+    font-size: 30px;
+  }
+
+  &--size-l {
+    font-size: 20px;
+  }
+}

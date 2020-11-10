@@ -1,0 +1,24 @@
+.description {
+  display: flex;
+  padding-bottom: 150px;
+
+  &__heading {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 18px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background-color: $brand-color;
+    }
+  }
+}

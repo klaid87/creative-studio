@@ -1,0 +1,33 @@
+.features {
+  background-image: url("../images/features/features-background.jpg");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../images/features/features-background@2x.jpg");
+  }
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 440px 0 185px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 73, 94, 0.7);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right bottom, transparent 49%, #ffffff 50%);
+  }
+}

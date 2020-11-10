@@ -1,0 +1,38 @@
+.button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--size-xl {
+    font-size: 15px;
+  }
+
+  &--size-l {
+    font-size: 14px;
+  }
+
+  &--size-m {
+    font-size: 13px;
+  }
+
+  &--primary {
+    border: 2px solid $brand-color;
+  }
+
+  &--secondary {
+    border: 2px solid #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: $brand-color;
+      border-color: $brand-color;
+    }
+  }
+}

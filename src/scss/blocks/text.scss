@@ -1,0 +1,27 @@
+.text {
+  margin: 0;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--size-xxl {
+    font-size: 45px;
+  }
+
+  &--size-xl {
+    font-size: 40px;
+  }
+
+  &--size-l {
+    font-size: 20px;
+  }
+  
+  &--weight-light {
+    font-weight: 300;
+  }
+
+  &--color-error {
+    color: $text-color-error;
+  }
+}

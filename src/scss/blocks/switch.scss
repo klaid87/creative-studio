@@ -1,0 +1,23 @@
+.switch {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50px;
+  margin: 0 auto;
+  
+  &__button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #5b6770;
+    outline: none;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+    
+    &--active {
+      background-color: #ffffff;
+    }
+  }
+}
