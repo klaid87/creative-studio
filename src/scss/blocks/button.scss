@@ -4,8 +4,11 @@
   border: none;
   cursor: pointer;
   display: inline-block;
-  text-transform: uppercase;
   transition: all 0.3s;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
 
   &--size-xl {
     font-size: 15px;
