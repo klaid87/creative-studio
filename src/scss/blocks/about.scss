@@ -1,12 +1,100 @@
 .about {
   padding-top: 100px;
 
-  &__title {
-    font-size: 20px;
-    margin-bottom: 25px;
+  &__description {
+    max-width: 1035px;
+    margin: 0 auto;
   }
 
-  &__text { 
+  &__row {
+    justify-content: space-between;
+
+    &:not(:last-of-type) {
+      padding-bottom: 120px;
+      border-bottom: 2px solid #e6e6e6;
+    }
+
+    &:last-of-type {
+      padding-top: 115px;
+    }
+  }
+
+  &__wrapper {
+    padding-left: 155px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 125px;
+      height: 125px;
+      border: 2px solid $brand-color;
+      border-radius: 50%;
+      
+    }
+    
+    &--top {
+      max-width: 655px;
+      
+      &::before {
+        background: url("../images/about/bulb.png") no-repeat center;
+      }
+    }
+
+    &--bottom {
+      max-width: 560px;
+
+      &::before {
+        background: url("../images/about/params.png") no-repeat center;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    line-height: 1.25;
+  }
+
+  &__text {
+    &:not(:last-of-type) {
       margin-bottom: 35px;
+    } 
+  }
+
+  &__list {
+    margin-top: 65px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__picture {
+    padding-left: 23px;
+  }
+
+  &__item-text {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__scale {
+    height: 10px;
+    background-color: #e6e6e6;
+  }
+
+  &__strip {
+    background-color: $brand-color;
+    height: 10px;
   }
 }

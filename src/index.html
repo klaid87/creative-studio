@@ -67,7 +67,7 @@
     <section class="about">
       <div class="container">
         <div class="about__description description">
-          <h2 class="description__heading heading">About</h2>
+          <h2 class="description__heading heading heading--size-xl">About</h2>
           <p class="description__text text text--uppercase">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
             bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
             vulputate cursus a sit amet.
@@ -75,15 +75,17 @@
         </div>
         <div class="about__row row">
           <div class="row__column">
-            <h3 class="about__title heading">Our Story</h3>
-            <p class="about__text text text--color-error text--size-l text--weight-light">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
-              consequat ipsum, nec sagittis sem nibh id elit.
-            </p>
-            <p class="about__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-              Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
-              erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-              per inceptos himenaeos.
-            </p>
+            <div class="about__wrapper about__wrapper--top">
+              <h3 class="about__title heading heading--size-l">Our Story</h3>
+              <p class="about__text text text--color-error text--size-l text--weight-light text--lh">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                consequat ipsum, nec sagittis sem nibh id elit.
+              </p>
+              <p class="about__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+                erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per inceptos himenaeos.
+              </p>
+            </div>
           </div>
           <div class="row__column">
             <picture class="about__picture picture">
@@ -94,32 +96,42 @@
         <div class="about__row row">
           <div class="about__column row__column">
             <picture class="about__picture picture">
-              <img class="about__image" src="http://placehold.it/496x483/" alt="Изображение телефона и планшета">
+              <img class="about__image" src="images/about/iPhone.png" alt="Изображение телефона и планшета">
             </picture>
           </div>
           <div class="about__column row__column">
-            <h3 class="about__title heading">Our Skills</h3>
-            <p class="about__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-              ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
-              auctor eu in elit.
-            </p>
+            <div class="about__wrapper about__wrapper--bottom">
+              <h3 class="about__title heading heading--size-l">Our Skills</h3>
+              <p class="about__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
+                auctor eu in elit.
+              </p>
+            </div>
             <ul class="about__list list">
-              <li class="about__item">
-                <span class="about__item-text"><b>Design</b> / 88%</span>
-                <div class="about__item-scale"></div>
-              </li>
-              <li class="about__item">
-                <span class="about__item-text"><b>Development</b> / 76%</span>
-                <div class="about__item-scale"></div>
-              </li>
-              <li class="about__item">
-                <span class="about__item-text"><b>WordPress</b> / 81%</span>
-                <div class="about__item-scale"></div>
-              </li>
-              <li class="about__item">
-                <span class="about__item-text"><b>Drupal</b> / 71%</span>
-                <div class="about__item-scale"></div>
-              </li>
+                <li class="about__item">
+                  <span class="about__item-text"><b class="about__item-title">Design</b> / 88%</span>
+                  <div class="about__scale">
+                    <div style="width: 88%;" class="about__strip"></div>
+                  </div>
+                </li>
+                <li class="about__item">
+                  <span class="about__item-text"><b class="about__item-title">Development</b> / 76%</span>
+                  <div class="about__scale">
+                    <div style="width: 76%;" class="about__strip"></div>
+                  </div>
+                </li>
+                <li class="about__item">
+                  <span class="about__item-text"><b class="about__item-title">WordPress</b> / 81%</span>
+                  <div class="about__scale">
+                    <div style="width: 81%;" class="about__strip"></div>
+                  </div>
+                </li>
+                <li class="about__item">
+                  <span class="about__item-text"><b class="about__item-title">Drupal</b> / 71%</span>
+                  <div class="about__scale">
+                    <div style="width: 71%;" class="about__strip"></div>
+                  </div>
+                </li>
             </ul>
           </div>
         </div>

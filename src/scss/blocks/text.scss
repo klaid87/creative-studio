@@ -21,6 +21,10 @@
     font-weight: 300;
   }
 
+  &--lh {
+    line-height: 1.25;
+  }
+
   &--color-error {
     color: $text-color-error;
   }
