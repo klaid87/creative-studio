@@ -1,3 +1,15 @@
 .row {
   display: flex;
+
+  &__column {
+    flex-grow: 1;
+
+    &--size-l {
+      max-width: 660px;
+    }
+
+    &--size-m {
+      max-width: 560px;
+    }
+  }
 }

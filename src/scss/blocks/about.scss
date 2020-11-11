@@ -3,12 +3,10 @@
 
   &__description {
     max-width: 1035px;
-    margin: 0 auto;
+    margin: 0 auto 135px;
   }
 
   &__row {
-    justify-content: space-between;
-
     &:not(:last-of-type) {
       padding-bottom: 120px;
       border-bottom: 2px solid #e6e6e6;
@@ -19,7 +17,18 @@
     }
   }
 
-  &__wrapper {
+  &__column {
+    &:not(:last-of-type) {
+      margin-right: 60px;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text-block {
     padding-left: 155px;
     position: relative;
 
@@ -35,17 +44,13 @@
       
     }
     
-    &--top {
-      max-width: 655px;
-      
+    &--bulb {  
       &::before {
         background: url("../images/about/bulb.png") no-repeat center;
       }
     }
 
-    &--bottom {
-      max-width: 560px;
-
+    &--params {
       &::before {
         background: url("../images/about/params.png") no-repeat center;
       }
@@ -59,7 +64,7 @@
 
   &__text {
     &:not(:last-of-type) {
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     } 
   }
 
@@ -73,9 +78,10 @@
     }
   }
 
-  &__picture {
-    padding-left: 23px;
-  }
+  // &__picture {
+  //   display: flex;
+  //   justify-content: center;
+  // }
 
   &__item-text {
     display: inline-block;
@@ -86,15 +92,5 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
-  }
-
-  &__scale {
-    height: 10px;
-    background-color: #e6e6e6;
-  }
-
-  &__strip {
-    background-color: $brand-color;
-    height: 10px;
   }
 }
