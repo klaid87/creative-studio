@@ -44,13 +44,13 @@
       
     }
     
-    &--bulb {  
+    &--icon-bulb {  
       &::before {
         background: url("../images/about/bulb.png") no-repeat center;
       }
     }
 
-    &--params {
+    &--icon-params {
       &::before {
         background: url("../images/about/params.png") no-repeat center;
       }
