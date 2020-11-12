@@ -1,5 +1,5 @@
 .about {
-  padding-top: 100px;
+  padding: 100px 0 100px;
 
   &__description {
     max-width: 1035px;
@@ -77,11 +77,6 @@
       margin-bottom: 30px;
     }
   }
-
-  // &__picture {
-  //   display: flex;
-  //   justify-content: center;
-  // }
 
   &__item-text {
     display: inline-block;

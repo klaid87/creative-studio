@@ -1,0 +1,39 @@
+.team-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__picture {
+    margin-bottom: 25px;
+  }
+
+  &__image {
+    border-radius: 50%;
+  }
+
+  &__description {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.33;
+    color: #999999;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 4px;
+      background-color: #999999;
+    }
+  }
+
+  &__text {
+    color: #737373;
+  }
+}

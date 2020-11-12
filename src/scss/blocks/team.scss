@@ -1,0 +1,24 @@
+.team {
+  padding: 90px 0 0 0;
+
+  &__description {
+    max-width: 1035px;
+    margin: 0 auto 145px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 268px;
+    padding: 25px 15px 30px;
+    border-top: 5px solid transparent;
+
+    &:hover {
+      background-color: #f2f2f2f2;
+      border-top: 5px solid $brand-color;
+    }
+  }
+}

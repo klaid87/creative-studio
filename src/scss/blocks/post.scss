@@ -1,0 +1,23 @@
+.post {
+  position: relative;
+  background: url("../../images/features/features-background.jpg") no-repeat center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    background-image: linear-gradient(to right bottom, transparent 49%, #ffffff 50%);
+  }
+
+  &::before {
+    top: 0;
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
