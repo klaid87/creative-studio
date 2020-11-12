@@ -1,0 +1,9 @@
+.bar {
+  height: 10px;
+  background-color: #e6e6e6;
+
+  &__range {
+    background-color: $brand-color;
+    height: 10px;
+  }
+}

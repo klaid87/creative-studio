@@ -1,15 +1,14 @@
 .description {
   display: flex;
-  padding-bottom: 150px;
-
+  
   &__heading {
-    font-size: 30px;
     margin-right: 20px;
   }
 
   &__text {
     position: relative;
     padding-left: 18px;
+    line-height: 1.56;
 
     &::before {
       content: "";
