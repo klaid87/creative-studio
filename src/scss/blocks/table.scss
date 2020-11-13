@@ -1,0 +1,37 @@
+.table {
+  border-collapse: collapse;
+  
+  &__row {
+    border: 2px solid #e6e6e6;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 28px 90px;
+    border: 2px solid #e6e6e6;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__cell {
+    border: 2px solid #e6e6e6;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: $text-color-primory;
+  }
+
+  &__button {
+    padding: 10px 30px;
+    font-weight: 600;
+    color: #000000;
+  }
+}

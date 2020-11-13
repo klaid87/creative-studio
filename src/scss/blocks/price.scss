@@ -1,0 +1,9 @@
+.price {
+  &__title {
+    line-height: 1.25;
+  }
+
+  &__text {
+    color: $text-color-primory;
+  }
+}

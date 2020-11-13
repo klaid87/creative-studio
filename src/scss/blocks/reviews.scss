@@ -1,0 +1,39 @@
+.reviews {
+  padding: 200px 0;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__author {
+    color: $text-color-additional;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.36;
+    font-style: italic;
+    color: $text-color-additional;
+    margin-bottom: 25px;
+    max-width: 785px;
+  }
+
+  &__picture {
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    border: 2px solid $text-color-additional;
+    border-radius: 50%;
+  }
+}

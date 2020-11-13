@@ -1,0 +1,30 @@
+.team-socials {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    
+    &:hover {
+      svg {
+        fill: $brand-color;
+      }
+    }
+  }
+  
+  &__icon {
+    fill: #999999;
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -38,7 +38,6 @@
     text-transform: uppercase;
     font-style: normal;
     position: relative;
-    
 
     &::before {
       content: "";
@@ -49,6 +48,12 @@
       width: 50px;
       height: 5px;
       background-color: $brand-color;
+    }
+
+    &--line-bottom {
+      &::before {
+        top: 60px;
+      }
     }
   }
 }
