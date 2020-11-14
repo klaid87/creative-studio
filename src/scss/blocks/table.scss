@@ -3,6 +3,10 @@
   
   &__row {
     border: 2px solid #e6e6e6;
+    
+    &:nth-child(even) {
+      background-color: #fafafa;
+    }
   }
 
   &__title {
@@ -11,7 +15,23 @@
     color: #000000;
     text-transform: uppercase;
     padding: 28px 90px;
-    border: 2px solid #e6e6e6;
+  }
+
+  &__title-package {
+    position: relative;
+    padding-bottom: 15px;
+    display: inline-block;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 2px;
+      background-color: $brand-color;
+    }
   }
 
   &__title-block {
@@ -21,7 +41,6 @@
   }
 
   &__cell {
-    border: 2px solid #e6e6e6;
     text-align: center;
     padding: 15px 0;
     font-size: 15px;

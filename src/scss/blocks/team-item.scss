@@ -20,11 +20,9 @@
 
   &__picture {
     margin-bottom: 15px;
-  }
-
-  &__image {
     border: 2px solid #e6e6e6;
     border-radius: 50%;
+    overflow: hidden;
   }
 
   &__description {
