@@ -27,6 +27,10 @@
       .service__ellipse {
         background-color: $brand-color;
       }
+
+      svg {
+        fill: #ffffff;
+      }
     }
   }
 
@@ -37,6 +41,17 @@
     border-radius: 50%;
     transition: all 0.3s;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: #000000;
+    transition: all 0.3s;
   }
 
   &__title {

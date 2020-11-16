@@ -11,7 +11,11 @@
 
     &:hover {
       .achievements__ellipse {
-        border-color: #ffffff;
+        border-color: #ffffff; //правильно ли задавать тут цвет переменной, на цвет текста? 
+      }
+
+      svg {
+        fill: $brand-color;
       }
     }
   }
@@ -23,12 +27,17 @@
     border-radius: 50%;
     border: 2px solid $brand-color;
     transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
   }
 
   &__icon {
-    width: 20px;
-    height: 20px;
-    fill: red;
+    width: 35px;
+    height: 35px;
+    fill: #ffffff; //правильно ли задавать тут цвет переменной, на цвет текста? 
+    transition: all 0.3s;
   }
 
   &__number {
