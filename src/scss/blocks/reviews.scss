@@ -1,5 +1,5 @@
 .reviews {
-  padding: 200px 0;
+  padding: 175px 0 215px 0;
 
   &__item {
     display: flex;
@@ -18,7 +18,7 @@
 
   &__author {
     color: $text-color-light;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   &__text {
@@ -30,7 +30,7 @@
   }
 
   &__picture {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   &__image {

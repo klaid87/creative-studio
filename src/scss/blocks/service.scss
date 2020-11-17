@@ -9,7 +9,7 @@
   &__list {
     display: flex;
     border-bottom: 2px solid #e6e6e6;
-    padding-bottom: 120px;
+    padding-bottom: 115px;
   }
 
   &__item {
@@ -40,7 +40,7 @@
     border: 2px solid $brand-color;
     border-radius: 50%;
     transition: all 0.3s;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@
   &__title {
     display: inline-block;
     line-height: 1.25;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   &__text {

@@ -1,6 +1,8 @@
 .preview-price {
   &__title {
     line-height: 1.25;
+    display: inline-block;
+    margin-bottom: 10px;
   }
 
   &__text {
