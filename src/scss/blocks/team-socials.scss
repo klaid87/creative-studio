@@ -16,7 +16,7 @@
     transition: all 0.3s;
     
     &:hover {
-      svg {
+      .team-socials__icon {
         fill: $brand-color;
       }
     }
@@ -26,5 +26,6 @@
     fill: #999999;
     width: 20px;
     height: 20px;
+    transition: all 0.3s;
   }
 }

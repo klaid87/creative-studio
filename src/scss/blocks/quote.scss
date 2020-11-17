@@ -3,16 +3,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 245px 0;
   font-weight: 700;
-  color: $text-color-additional;
+  color: $text-color-light;
+  max-width: 960px;
 
   &__text {
     position: relative;
     line-height: 1.33;
     text-align: center;
-    max-width: 960px;
     margin-bottom: 30px;
 
     &::before,

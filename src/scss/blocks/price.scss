@@ -1,9 +1,91 @@
 .price {
-  &__title {
-    line-height: 1.25;
+  &__item {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+    &:hover {
+      background-color: #e6e6e6;
+      border-top-color: $brand-color;
+      border-bottom-color: #e6e6e6;
+      
+      .price__title {
+        background-color: $brand-color;
+        color: #ffffff;
+        border-color: $brand-color;
+      }
+
+      .price__title-package {
+        &::before {
+          background-color: #ffffff;
+        }
+      }
+
+      .price__row {
+        &:nth-child(even) {
+          background-color: #e6e6e6;
+        }
+
+        &:nth-child(odd) {
+          background-color: #f2f2f2;
+        }
+      }
+    }
   }
 
-  &__text {
-    color: $text-color-primory;
+  &__table {
+    border-collapse: collapse;
+  }
+
+  &__row {
+    &:nth-child(even) {
+      background-color: #fafafa;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 28px 90px;
+    border: 1px solid #e6e6e6;
+  }
+
+  &__title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title-package {
+    position: relative;
+    padding-bottom: 15px;
+    display: inline-block;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 2px;
+      background-color: $brand-color;
+    }
+  }
+
+  &__cell {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: $text-color-secondary;
+    border: 1px solid #e6e6e6;
+  }
+
+  &__button {
+    padding: 10px 30px;
+    font-weight: 600;
+    color: #000000;
   }
 }

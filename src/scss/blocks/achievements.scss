@@ -1,5 +1,5 @@
 .achievements {
-  padding: 190px 0 240px;
+  padding: 190px 0 240px 0;
   display: flex;
   justify-content: space-between;
 
@@ -11,16 +11,16 @@
 
     &:hover {
       .achievements__ellipse {
-        border-color: #ffffff; //правильно ли задавать тут цвет переменной, на цвет текста? 
+        border-color: #ffffff;
       }
 
-      svg {
+      .achievements__icon {
         fill: $brand-color;
       }
     }
   }
 
-  &__ellipse {
+  &__circle {
     margin-bottom: 8px;
     width: 170px;
     height: 170px;
@@ -36,19 +36,19 @@
   &__icon {
     width: 35px;
     height: 35px;
-    fill: #ffffff; //правильно ли задавать тут цвет переменной, на цвет текста? 
+    fill: #ffffff;
     transition: all 0.3s;
   }
 
   &__number {
     font-size: 45px;
-    color: $text-color-additional;
+    color: $text-color-light;
     font-weight: 700;
   }
 
   &__text {
     font-size: 25px;
-    color: $text-color-additional;
+    color: $text-color-light;
     line-height: 1.25px;
   }
 }

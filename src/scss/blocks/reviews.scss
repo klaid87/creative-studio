@@ -12,10 +12,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 785px;
+    margin: 0 auto;
   }
 
   &__author {
-    color: $text-color-additional;
+    color: $text-color-light;
     margin-bottom: 30px;
   }
 
@@ -23,9 +25,8 @@
     font-size: 22px;
     line-height: 1.36;
     font-style: italic;
-    color: $text-color-additional;
+    color: $text-color-light;
     margin-bottom: 25px;
-    max-width: 785px;
   }
 
   &__picture {

@@ -24,17 +24,17 @@
     }
 
     &:hover {
-      .service__ellipse {
+      .service__circle {
         background-color: $brand-color;
       }
 
-      svg {
+      .service__icon {
         fill: #ffffff;
       }
     }
   }
 
-  &__ellipse {
+  &__circle {
     width: 105px;
     height: 105px;
     border: 2px solid $brand-color;
@@ -61,14 +61,14 @@
   }
 
   &__text {
-    color: $text-color-primory;
+    color: $text-color-secondary;
   }
 
   &__row {
     padding-top: 120px;
   }
 
-  &__price {
+  &__preview-price {
     max-width: 320px;
     padding-top: 155px;
     margin-right: 110px;
@@ -87,18 +87,8 @@
     }
   }
 
-  &__tables {
+  &__price {
     max-width: 748px;
     display: flex;
-  }
-
-  &__item-table {
-    margin-left: -1px;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-
-    &:hover {
-      background-color: #e6e6e6;
-    }
   }
 }
