@@ -1,14 +1,14 @@
 .features {
   background-image: url("../images/features/features-background.jpg");
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  @include retina {
     background-image: url("../images/features/features-background@2x.jpg");
   }
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 440px 0 185px;
+  padding: 440px 0 185px 0;
   position: relative;
 
   &::before {

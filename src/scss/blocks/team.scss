@@ -1,0 +1,13 @@
+.team {
+  padding: 100px 0;
+
+  &__description {
+    max-width: 1035px;
+    margin: 0 auto 145px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
