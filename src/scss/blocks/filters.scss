@@ -1,0 +1,31 @@
+.filters {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      position: relative;
+      padding-right: 35px;
+      margin-right: 20px;
+      
+      &::after {
+        content: "\\\\";
+        position: absolute;
+        font-weight: 700;
+        color: #a6a6a6;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__label {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+  }
+
+  input:checked + .filters__label {
+    color: $brand-color;
+  }
+}

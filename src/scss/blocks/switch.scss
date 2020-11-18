@@ -8,9 +8,18 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #5b6770;
+    background-color: rgba(255, 255, 255, 0.2);
     outline: none;
     transition: all 0.3s;
+
+    &--size-l {
+      width: 15px;
+      height: 15px;
+    }
+
+    &--margin-b {
+      margin-bottom: 5px;
+    }
 
     &:hover {
       transform: scale(1.2);

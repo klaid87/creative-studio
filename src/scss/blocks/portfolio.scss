@@ -1,0 +1,64 @@
+.portfolio {
+  padding: 100px 0;
+
+  &__description {
+    max-width: 1095px;
+    margin: 0 auto 145px;
+  }
+
+  &__slider {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__switch {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    flex-direction: column;
+  }
+
+  &__block-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+  }
+
+  &__signature {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 115px;
+  }
+
+  &__title {
+    line-height: 1.25;
+  }
+
+  &__label {
+    color: $text-color-tertiary;
+  }
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+    fill: #000000;
+  }
+
+  &__filters {
+    padding-top: 110px;
+    max-width: 730px;
+    margin: 0 auto 75px;
+  }
+}

@@ -1,0 +1,30 @@
+.works {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 25%;
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  &__picture {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    line-height: 1.45;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: $text-color-tertiary;
+    line-height: 1.57;
+  }
+}
