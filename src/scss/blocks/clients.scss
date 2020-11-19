@@ -1,0 +1,19 @@
+.clients {
+  padding: 200px 0;
+
+  &__heading {
+    text-align: center;
+    color: $text-color-light;
+    line-height: 2;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+  }
+}
