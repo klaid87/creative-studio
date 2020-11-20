@@ -86,6 +86,26 @@
         <path d="M300.2 246l184-184a26.8 26.8 0 000-38L468 7.9a26.7 26.7 0 00-38 0l-184 184L62 7.8a26.7 26.7 0 00-38 0l-16.1 16a27 27 0 000 38.1l184 184-184 184a26.7 26.7 0 000 38L24 484.1a26.7 26.7 0 0038 0l184-184 184 184a26.7 26.7 0 0038 0l16.1-16c5.1-5.2 7.9-12 7.9-19.1 0-7.2-2.8-14-7.9-19l-184-184z"/>
       </g>
     </symbol>
+    <symbol id="pinterest" viewBox="-62 0 512 512">
+      <g>
+        <path d="M61 278.2c.6-1.6 7-26.2 7.4-27.9-10-15-21-64.4-12.6-104.4C65 87.2 127.3 58.3 186 58.3c73.6 0 128.7 40.9 128.7 111.4 0 55.2-33.1 128.1-90 128.1-20.2 0-45.9-9.2-52.6-18.2a40.3 40.3 0 01-5.6-37c10.1-32 23-70.5 24.4-96 1.4-24.3-15.8-40-38-40-16.8 0-38.5 9.7-49.4 37-9 22.8-8.7 46.5.6 72.7 3.7 10.3-16.1 77-22.5 98.7C66 369 44.3 437.4 49 475.4l4.5 36.6 22.3-29.3c31-40.5 63-145.3 71.5-170.8 25.2 32.6 77.7 33.5 83.8 33.5 75.2 0 160.5-74.6 158-178.5C387 75.8 320.4 0 200.5 0v.1C86.4.1 20 61 3.6 137.8-11.3 209.1 22 263.3 61 278.2zm0 0"/>
+      </g>
+    </symbol>
+    <symbol id="rss" viewBox="0 0 331.9 331.9">
+      <g>
+        <circle cx="46.5" cy="285.3" r="46.5"/><path d="M0 120.6V181c83.3 0 150.8 67.6 150.8 150.8h60.4A211.3 211.3 0 000 120.6z"/><path d="M0 0v60.4c150 0 271.6 121.6 271.6 271.5h60.3A332 332 0 000 0z"/>
+      </g>
+    </symbol>
+    <symbol id="email" viewBox="0 0 512 512">
+      <g>
+        <path d="M467 61H45a45 45 0 00-45 45v300a45 45 0 0045 45h422a45 45 0 0045-45V106a45 45 0 00-45-45zm-6.2 30L257 294.8 51.4 91h409.4zM30 399.8V112l144.5 143.2L30 399.8zM51.2 421l144.6-144.6 50.6 50.3a15 15 0 0021.2 0l49.4-49.5L460.8 421H51.2zM482 399.8L338.2 256 482 112.2v287.6z"/>
+      </g>
+    </symbol>
+    <symbol id="pen" viewBox="-15 -15 484 484">
+      <g>
+        <path d="M401.6 18.2a62.5 62.5 0 00-88.2 0l-22.1 22.3L56 275.6l-.5.5c-.1.1-.1.3-.3.3l-.8 1c0 .2-.2.2-.2.3-.2.4-.3.7-.6 1l-.2.4-.4 1-.1.3-52.2 157c-1.6 4.4-.4 9.3 3 12.7a12.6 12.6 0 0012.8 3l156.9-52.4h.2l1.1-.6.3-.1 1.2-.8 1.2-.8c0-.2.2-.2.2-.3.1-.1.4-.2.5-.5l257.4-257.4a62.5 62.5 0 000-88.3zM169.4 371.4l-87-87L300 67l87 87zm-99.2-63.8l76 75.9-114 38zM418 122.8L404.6 136l-86.9-86.9 13.4-13.4a37.5 37.5 0 0153 0l33.9 34a37.6 37.6 0 01-.1 53zm0 0"/>
+      </g>
+    </symbol>
   </svg>
   <header class="page-header">
     <div class="container">
@@ -632,7 +652,7 @@
               </blockquote>
               <picture class="reviews__picture picture">
                 <source type="image/webp" srcset="./images/reviews/reviews-author.webp, ./images/reviews/reviews-author@2x.webp 2x">
-                <img class="reviews__image" src="./images/reviews/reviews-author.png" srcset="./images/reviews/reviews-author@2x.png"
+                <img class="reviews__image" src="./images/reviews/reviews-author.png" srcset="./images/reviews/reviews-author@2x.png 2x"
                   alt="image of the person who wrote the review">
               </picture>
             </li>
@@ -726,7 +746,8 @@
               <a class="works__link" href="#">
                 <div class="works__overlay"></div>
                 <picture class="works__picture picture">
-                  <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+                  <source type="image/webp" srcset="./images/works/1-img.webp, ./images/works/1-img@2x.webp 2x">
+                  <img class="works__image" src="./images/works/1-img.jpg" srcset="./images/works/1-img@2x.jpg 2x" alt="picture of works">
                 </picture>
                 <h3 class="works__title heading heading--size-m">Project Title Here</h3>
                 <span class="works__description">Graphics</span>
@@ -736,7 +757,8 @@
               <a class="works__link" href="#">
                 <div class="works__overlay"></div>
                 <picture class="works__picture picture">
-                  <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+                  <source type="image/webp" srcset="./images/works/2-img.webp, ./images/works/2-img@2x.webp 2x">
+                  <img class="works__image" src="./images/works/2-img.jpg" srcset="./images/works/2-img@2x.jpg 2x" alt="picture of works">
                 </picture>
                 <h3 class="works__title heading heading--size-m">Project Title Here</h3>
                 <span class="works__description">Photography</span>
@@ -746,7 +768,8 @@
               <a class="works__link" href="#">
                 <div class="works__overlay"></div>
                 <picture class="works__picture picture">
-                  <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+                  <source type="image/webp" srcset="./images/works/3-img.webp, ./images/works/3-img@2x.webp 2x">
+                  <img class="works__image" src="./images/works/3-img.jpg" srcset="./images/works/3-img@2x.jpg 2x" alt="picture of works">
                 </picture>
                 <h3 class="works__title heading heading--size-m">Project Title Here</h3>
                 <span class="works__description">Braining</span>
@@ -756,7 +779,8 @@
               <a class="works__link" href="#">
                 <div class="works__overlay"></div>
                 <picture class="works__picture picture">
-                  <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+                  <source type="image/webp" srcset="./images/works/4-img.webp, ./images/works/4-img@2x.webp 2x">
+                  <img class="works__image" src="./images/works/4-img.jpg" srcset="./images/works/4-img@2x.jpg 2x" alt="picture of works">
                 </picture>
                 <h3 class="works__title heading heading--size-m">Project Title Here</h3>
                 <span class="works__description">Graphics</span>
@@ -766,7 +790,8 @@
               <a class="works__link" href="#">
                 <div class="works__overlay"></div>
                 <picture class="works__picture picture">
-                  <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+                  <source type="image/webp" srcset="./images/works/5-img.webp, ./images/works/5-img@2x.webp 2x">
+                  <img class="works__image" src="./images/works/5-img.jpg" srcset="./images/works/5-img@2x.jpg 2x" alt="picture of works">
                 </picture>
                 <h3 class="works__title heading heading--size-m">Project Title Here</h3>
                 <span class="works__description">Web Design</span>
@@ -776,7 +801,8 @@
               <a class="works__link" href="#">
                 <div class="works__overlay"></div>
                 <picture class="works__picture picture">
-                  <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+                  <source type="image/webp" srcset="./images/works/6-img.webp, ./images/works/6-img@2x.webp 2x">
+                  <img class="works__image" src="./images/works/6-img.jpg" srcset="./images/works/6-img@2x.jpg 2x" alt="picture of works">
                 </picture>
                 <h3 class="works__title heading heading--size-m">Project Title Here</h3>
                 <span class="works__description">Video</span>
@@ -786,7 +812,8 @@
               <a class="works__link" href="#">
                 <div class="works__overlay"></div>
                 <picture class="works__picture picture">
-                  <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+                  <source type="image/webp" srcset="./images/works/7-img.webp, ./images/works/7-img@2x.webp 2x">
+                  <img class="works__image" src="./images/works/7-img.jpg" srcset="./images/works/7-img@2x.jpg 2x" alt="picture of works">
                 </picture>
                 <h3 class="works__title heading heading--size-m">Project Title Here</h3>
                 <span class="works__description">Photography</span>
@@ -796,7 +823,8 @@
               <a class="works__link" href="#">
                 <div class="works__overlay"></div>
                 <picture class="works__picture picture">
-                  <img class="works__image" src="http://placehold.it/293x219/" alt="picture of works">
+                  <source type="image/webp" srcset="./images/works/8-img.webp, ./images/works/8-img@2x.webp 2x">
+                  <img class="works__image" src="./images/works/8-img.jpg" srcset="./images/works/8-img@2x.jpg 2x" alt="picture of works">
                 </picture>
                 <h3 class="works__title heading heading--size-m">Project Title Here</h3>
                 <span class="works__description">Braining</span>
@@ -829,8 +857,9 @@
         </div>
         <ul class="blog__list list">
           <li class="blog__item">
-            <picture class="blog__picture picture">
-              <img class="blog__image" src="http://placehold.it/555x300/" alt="blog image">
+            <picture class="blog__picture blog-picture blog-picture--has-icon-frameworks picture">
+              <source type="image/webp" srcset="./images/blog-picture/1-img.webp, ./images/blog-picture/1-img@2x.webp 2x">
+              <img class="works__image" src="./images/blog-picture/1-img.jpg" srcset="./images/blog-picture/1-img@2x.jpg 2x" alt="blog image">
             </picture>
             <div class="blog__post blog-post">
               <p class="blog-post__info text">
@@ -849,8 +878,9 @@
             </div>
           </li>
           <li class="blog__item">
-            <picture class="blog__picture blog-picture blog-picture--has-icon-portrets picture">
-              <img class="blog-picture__image" src="http://placehold.it/555x300/" alt="blog image">
+            <picture class="blog__picture blog-picture blog-picture--has-icon-framework picture">
+              <source type="image/webp" srcset="./images/blog-picture/2-img.webp, ./images/blog-picture/2-img@2x.webp 2x">
+              <img class="works__image" src="./images/blog-picture/2-img.jpg" srcset="./images/blog-picture/2-img@2x.jpg 2x" alt="blog image">
             </picture>
             <div class="blog__post blog-post">
               <p class="blog-post__info text">
@@ -869,8 +899,9 @@
             </div>
           </li>
           <li class="blog__item">
-            <picture class="blog__picture picture">
-              <img class="blog__image" src="http://placehold.it/555x300/" alt="blog image">
+            <picture class="blog__picture blog-picture blog-picture--has-icon-film picture">
+              <source type="image/webp" srcset="./images/blog-picture/3-img.webp, ./images/blog-picture/3-img@2x.webp 2x">
+              <img class="works__image" src="./images/blog-picture/3-img.jpg" srcset="./images/blog-picture/3-img@2x.jpg 2x" alt="blog image">
             </picture>
             <div class="blog__post blog-post">
               <p class="blog-post__info text">
@@ -889,8 +920,9 @@
             </div>
           </li>
           <li class="blog__item">
-            <picture class="blog__picture picture">
-              <img class="blog__image" src="http://placehold.it/555x300/" alt="blog image">
+            <picture class="blog__picture blog-picture blog-picture--has-icon-headphones picture">
+              <source type="image/webp" srcset="./images/blog-picture/4-img.webp, ./images/blog-picture/4-img@2x.webp 2x">
+              <img class="works__image" src="./images/blog-picture/4-img.jpg" srcset="./images/blog-picture/4-img@2x.jpg 2x" alt="blog image">
             </picture>
             <div class="blog__post blog-post">
               <p class="blog-post__info text">
@@ -919,22 +951,22 @@
           <ul class="clients__list list">
           <li class="clients__item">
             <picture class="clients__picture picture">
-              <img class="clients__image" src="./images/clients/start Sharing.png" alt="Picture with logo">
+              <img class="clients__image" src="./images/clients/1-img.png" alt="Picture with logo">
             </picture>
           </li>
           <li class="clients__item">
             <picture class="clients__picture picture">
-              <img class="clients__image" src="http://placehold.it/257x162/" alt="Picture with logo">
+              <img class="clients__image" src="./images/clients/2-img.png" alt="Picture with logo">
             </picture>
           </li>
           <li class="clients__item">
             <picture class="clients__picture picture">
-              <img class="clients__image" src="http://placehold.it/257x162/" alt="Picture with logo">
+              <img class="clients__image" src="./images/clients/3-img.png" alt="Picture with logo">
             </picture>
           </li>
           <li class="clients__item">
             <picture class="clients__picture picture">
-              <img class="clients__image" src="http://placehold.it/257x162/" alt="Picture with logo">
+              <img class="clients__image" src="./images/clients/4-img.png" alt="Picture with logo">
             </picture>
           </li>
           </ul>
@@ -945,49 +977,60 @@
     <section class="contact">
       <div class="container">
         <div class="contact__description description">
-          <h2 class="description__heading heading">Contact</h2>
-          <p class="description__text text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+          <h2 class="description__heading heading heading--size-xl">Contact</h2>
+          <p class="description__text text text--uppercase">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
             bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
             vulputate cursus a sit amet.
           </p>
         </div>
-        <div class="contact__column">
-          <h3 class="contact__title heading">Drop Us A Message</h3>
-          <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="contact__wrapper-field">
-              <input class="contact__input" type="text" name="name" placeholder="Mike">
+        <div class="row">
+          <div class="contact__column">
+            <h3 class="contact__title heading heading--size-l">Drop Us A Message</h3>
+            <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="contact__wrapper-field text">
+                <input class="contact__input" type="text" name="name" placeholder="Mike">
+                <svg class="contact__icon">
+                  <use xlink:href="#user"></use>
+                </svg>
+              </p>
+              <p class="contact__wrapper-field text">
+                <input class="contact__input" type="email" name="mail" placeholder="Email">
+                <svg class="contact__icon">
+                  <use xlink:href="#email"></use>
+                </svg>
+              </p>
+              <p class="contact__wrapper-field text">
+                <textarea class="contact__textarea" name="message" placeholder="Message"></textarea>
+                <svg class="contact__icon">
+                  <use xlink:href="#pen"></use>
+                </svg>
+              </p>
+              <button class="contact__button button--primary button" type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="contact__column">
+            <h3 class="contact__title heading heading--size-l">Contact Info</h3>
+            <p class="contact__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+              ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
+              auctor eu in elit.
             </p>
-            <p class="contact__wrapper-field">
-              <input class="contact__input" type="email" name="mail" placeholder="Email">
-            </p>
-            <p class="contact__wrapper-field">
-              <textarea class="contact__textarea" name="message" placeholder="Message"></textarea>
-            </p>
-            <button class="contact__button button--primar button" type="submit">Submit</button>
-          </form>
-        </div>
-        <div class="contact__column">
-          <h3 class="contact__title heading">Contact Info</h3>
-          <p class="contact__text text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-            ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
-            auctor eu in elit.
-          </p>
-          <ul class="contact__list list">
-            <li class="contact__item">
-              <a class="contact__link contact__link--adress" href="#">13/2 Elizabeth St, Melbourne VIC 3000, Australia</a>
-            </li>
-            <li class="contact__item">
-              <a class="contact__link contact__link--phone" href="tel:+6131468728">+61 3146 8728, +61 0987 6543</a>
-            </li>
-            <li class="contact__item">
-              <a class="contact__link contact__link--mail" href="mailto:support@envato.net">support@envato.net</a>
-            </li>
-          </ul>
+            <ul class="contact__list list">
+              <li class="contact__item">
+                <a class="contact__link contact__link--adress" href="#">13/2 Elizabeth St, Melbourne VIC 3000, Australia</a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link contact__link--phone" href="tel:+6131468728">+61 3146 8728, +61 0987 6543</a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link contact__link--mail" href="mailto:support@envato.net">support@envato.net</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="post">
+    <section class="post post--location">
       <h2 class="visually-hidden">Our location on the map</h2>
       <div class="location">
       </div>
@@ -995,30 +1038,69 @@
   </main>
 
   <footer class="page-footer">
-    <p class="page-footer__copyright">© MINI 2014, All Right Reserves <span class="page-footer__line">|</span> Designed By bigpsfan & Metrothemes</p>
-    <ul class="page-footer__socials socials list">
-      <li class="socials__item">
-        <a class="socials__link" href="#"><span class="visually-hidden">Twitter</span></a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#"><span class="visually-hidden">Facebook</span></a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#"><span class="visually-hidden">Instagram</span></a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#"><span class="visually-hidden">Dribbble</span></a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#"><span class="visually-hidden">Pinterest</span></a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#"><span class="visually-hidden">Gmail</span></a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#"><span class="visually-hidden">Rss</span></a>
-      </li>
-    </ul>
+    <div class="container">
+      <div class="page-footer__body">
+        <p class="page-footer__copyright text">© MINI 2014, All Right Reserves <span class="page-footer__line">|</span> Designed By bigpsfan & Metrothemes</p>
+        <ul class="page-footer__socials socials list">
+          <li class="socials__item">
+            <a class="socials__link" href="https://twitter.com/">
+              <span class="visually-hidden">Twitter</span>
+              <svg class="socials__icon" aria-hidden="true">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.facebook.com/">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="socials__icon" aria-hidden="true">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://ru.linkedin.com/">
+              <span class="visually-hidden">Linkedin</span>
+              <svg class="socials__icon" aria-hidden="true">
+                <use xlink:href="#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://dribbble.com/">
+              <span class="visually-hidden">Dribbble</span>
+              <svg class="socials__icon" aria-hidden="true">
+                <use xlink:href="#dribbble"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.pinterest.com/">
+              <span class="visually-hidden">pinterest</span>
+              <svg class="socials__icon" aria-hidden="true">
+                <use xlink:href="#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://mail.google.com/">
+              <span class="visually-hidden">Google</span>
+              <svg class="socials__icon" aria-hidden="true">
+                <use xlink:href="#google"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <span class="visually-hidden">Rss</span>
+              <svg class="socials__icon" aria-hidden="true">
+                <use xlink:href="#rss"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>

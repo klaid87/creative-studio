@@ -1,11 +1,11 @@
 .clients {
-  padding: 200px 0;
+  padding: 195px 0 250px 0;
 
   &__heading {
     text-align: center;
     color: $text-color-light;
     line-height: 2;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 
   &__list {
@@ -15,5 +15,15 @@
 
   &__item {
     display: flex;
+  }
+
+  &__picture {
+    display: flex;
+    width: 255px; //Обрати внимание. Пришлось задать фикс размеры,т.к картинки разные. Правильно ли это?
+    height: 162px;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #818181;
   }
 }

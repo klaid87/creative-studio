@@ -1,0 +1,123 @@
+.contact {
+  padding: 95px 0 100px 0;
+
+  &__description {
+    max-width: 1075px;
+    margin: 0 auto 140px;
+  }
+
+  &__column {
+    &:not(:last-of-type) {
+      margin-right: 60px;
+    }
+  }
+
+  &__title {
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+
+  &__wrapper-field {
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  &__input:focus + .contact__icon {
+    fill: $brand-color;
+  }
+
+  &__textarea:focus + .contact__icon {
+    fill: $brand-color;
+  }
+
+  &__input,
+  &__textarea {
+    width: 620px;
+    outline: none;
+    border: 2px solid #d9d9d9;
+    padding: 13px 25px;
+    font-size: 15px;
+    color: $text-color-tertiary;
+    
+
+    &:focus {
+      border-color: $brand-color;
+    }
+  }
+  
+  &__input::placeholder,
+  &__textarea::placeholder {
+    font-size: 15px;
+    color: $text-color-tertiary;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    fill: #d9d9d9;
+  }
+
+  &__textarea {
+    height: 125px;
+  }
+
+  &__button {
+    padding: 10px 33px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: $text-color-secondary;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    margin-bottom: 13px;
+  }
+
+  &__link {
+    padding-left: 55px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #0d0d0d;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      border: 2px solid $brand-color;
+      border-radius: 50%;
+    }
+
+    &--adress {
+      &::before {
+        background: url("../images/contact/location.png") no-repeat center;
+      }
+    }
+
+    &--phone {
+      &::before {
+        background: url("../images/contact/phone.png") no-repeat center;
+      }
+    }
+
+    &--mail {
+      &::before {
+        background: url("../images/contact/mail.png") no-repeat center;
+      }
+    }
+  }
+}

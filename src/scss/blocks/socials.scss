@@ -1,0 +1,23 @@
+.socials {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
+
+  &__link {
+    &:hover {
+      .socials__icon {
+        fill: $brand-color;
+      }
+    }
+  }
+  
+  &__icon {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s;
+  }
+}

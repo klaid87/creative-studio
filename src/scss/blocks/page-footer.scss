@@ -1,0 +1,19 @@
+.page-footer {
+  padding: 35px 0 100px 0;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    color: #a6a6a6;
+  }
+}
