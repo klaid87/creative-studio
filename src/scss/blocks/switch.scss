@@ -3,6 +3,14 @@
   justify-content: space-between;
   max-width: 50px;
   margin: 0 auto;
+
+  &--vertical {
+    flex-direction: column;
+    
+    .button {             //----Обрати внимание. Правильно ли это?
+      margin-bottom: 5px;
+    }
+  }
   
   &__button {
     width: 12px;
@@ -15,10 +23,6 @@
     &--size-l {
       width: 15px;
       height: 15px;
-    }
-
-    &--margin-b {
-      margin-bottom: 5px;
     }
 
     &:hover {

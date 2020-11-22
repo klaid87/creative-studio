@@ -78,18 +78,8 @@
 
   &__item {
     margin-bottom: 13px;
-  }
-
-  &__link {
     padding-left: 55px;
     position: relative;
-    display: flex;
-    align-items: center;
-    color: #0d0d0d;
-
-    &:hover {
-      text-decoration: underline;
-    }
 
     &::before {
       content: "";
@@ -102,22 +92,36 @@
       border-radius: 50%;
     }
 
-    &--adress {
+    &--has-item-location {
       &::before {
         background: url("../images/contact/location.png") no-repeat center;
       }
     }
 
-    &--phone {
+    &--has-item-phone {
       &::before {
         background: url("../images/contact/phone.png") no-repeat center;
       }
     }
 
-    &--mail {
+    &--has-item-mail {
       &::before {
         background: url("../images/contact/mail.png") no-repeat center;
       }
+    }
+  }
+
+  &__address {
+    font-style: normal;
+    line-height: 1.56;
+    color: #0d0d0d;
+  }
+
+  &__link {
+    color: #0d0d0d;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

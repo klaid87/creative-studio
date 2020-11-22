@@ -683,9 +683,9 @@
                 <source type="image/webp" srcset="./images/portfolio/portfolio-main.webp, ./images/portfolio/portfolio-main@2x.webp 2x">
                 <img class="portfolio__image" src="./images/portfolio/portfolio-main.jpg" srcset="./images/portfolio/portfolio-main@2x.jpg 2x" alt="The photo">
               </picture>
-              <div class="portfolio__switch switch">
-                <button class="switch__button button switch__button--active switch__button--size-l switch__button--margin-b" type="button"><span class="visually-hidden">1</span></button>
-                <button class="switch__button button switch__button--size-l switch__button--margin-b" type="button"><span class="visually-hidden">2</span></button>
+              <div class="portfolio__switch switch switch--vertical">
+                <button class="switch__button button switch__button--active switch__button--size-l" type="button"><span class="visually-hidden">1</span></button>
+                <button class="switch__button button switch__button--size-l" type="button"><span class="visually-hidden">2</span></button>
                 <button class="switch__button button switch__button--size-l" type="button"><span class="visually-hidden">3</span></button>
               </div>
             </li>
@@ -1015,15 +1015,15 @@
               auctor eu in elit.
             </p>
             <ul class="contact__list list">
-              <li class="contact__item">
-                <a class="contact__link contact__link--adress" href="#">13/2 Elizabeth St, Melbourne VIC 3000, Australia</a>
+              <li class="contact__item contact__item--has-item-location">
+                <address class="contact__address" href="#">13/2 Elizabeth St, Melbourne VIC 3000, Australia</address>
               </li>
-              <li class="contact__item">
-                <a class="contact__link contact__link--phone" href="tel:+6131468728">+61 3146 8728,</a>
+              <li class="contact__item contact__item--has-item-phone">
+                <a class="contact__link" href="tel:+6131468728">+61 3146 8728,</a>
                 <a class="contact__link" href="tel:+6109876543">+61 0987 6543</a>
               </li>
-              <li class="contact__item">
-                <a class="contact__link contact__link--mail" href="mailto:support@envato.net">support@envato.net</a>
+              <li class="contact__item contact__item--has-item-mail">
+                <a class="contact__link" href="mailto:support@envato.net">support@envato.net</a>
               </li>
             </ul>
           </div>
