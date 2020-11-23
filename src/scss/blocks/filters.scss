@@ -1,4 +1,6 @@
 .filters {
+  $self: &;
+
   display: flex;
 
   &__item {
@@ -25,7 +27,7 @@
     font-weight: 700;
   }
 
-  input:checked + .filters__label {
+  input:checked + #{$self}__label {
     color: $brand-color;
   }
 }

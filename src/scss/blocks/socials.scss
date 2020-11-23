@@ -1,4 +1,6 @@
 .socials {
+  $self: &;
+
   display: flex;
 
   &__item {
@@ -9,7 +11,7 @@
 
   &__link {
     &:hover {
-      .socials__icon {
+      #{$self}__icon {
         fill: $brand-color;
       }
     }

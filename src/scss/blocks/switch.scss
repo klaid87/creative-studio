@@ -1,4 +1,6 @@
 .switch {
+  $self: &;
+
   display: flex;
   justify-content: space-between;
   max-width: 50px;
@@ -7,7 +9,7 @@
   &--vertical {
     flex-direction: column;
     
-    .button {             //----Обрати внимание. Правильно ли это?
+    #{$self}__button {             
       margin-bottom: 5px;
     }
   }

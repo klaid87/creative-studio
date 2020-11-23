@@ -1,4 +1,6 @@
 .price {
+  $self: &;
+
   &__item {
     position: relative;
   
@@ -36,19 +38,19 @@
           border: none;
         }
   
-      .price__title {
+        #{$self}__title {
         background-color: $brand-color;
         color: #ffffff;
         border-color: $brand-color;
       }
 
-      .price__title-package {
+      #{$self}__title-package {
         &::before {
           background-color: #ffffff;
         }
       }
 
-      .price__row {
+      #{$self}__row {
         &:nth-child(even) {
           background-color: #e6e6e6;
         }

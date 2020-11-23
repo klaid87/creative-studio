@@ -1,4 +1,6 @@
 .team-socials {
+  $self: &;
+
   display: flex;
 
   &__item {
@@ -16,7 +18,7 @@
     transition: all 0.3s;
     
     &:hover {
-      .team-socials__icon {
+      #{$self}__icon {
         fill: $brand-color;
       }
     }

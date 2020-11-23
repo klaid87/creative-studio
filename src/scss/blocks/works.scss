@@ -1,4 +1,6 @@
 .works {
+  $self: &;
+
   display: flex;
   flex-wrap: wrap;
 
@@ -14,11 +16,11 @@
     position: relative;
 
     &:hover {
-      .works__overlay {
+      #{$self}__overlay {
         opacity: 1;
       }
 
-      .works__title {
+      #{$self}__title {
         color: $brand-color;
       }
     }
