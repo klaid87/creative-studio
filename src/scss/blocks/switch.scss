@@ -1,16 +1,31 @@
 .switch {
+  $self: &;
+
   display: flex;
   justify-content: space-between;
   max-width: 50px;
   margin: 0 auto;
+
+  &--vertical {
+    flex-direction: column;
+    
+    #{$self}__button {             
+      margin-bottom: 5px;
+    }
+  }
   
   &__button {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #5b6770;
+    background-color: rgba(255, 255, 255, 0.2);
     outline: none;
     transition: all 0.3s;
+
+    &--size-l {
+      width: 15px;
+      height: 15px;
+    }
 
     &:hover {
       transform: scale(1.2);

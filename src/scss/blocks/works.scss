@@ -1,0 +1,68 @@
+.works {
+  $self: &;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 25%;
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+      #{$self}__overlay {
+        opacity: 1;
+      }
+
+      #{$self}__title {
+        color: $brand-color;
+      }
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 293px;
+    height: 219px;
+    background: rgba(255, 255, 255, 0.9) radial-gradient(circle, rgba(243, 156, 18, 0.5) 26%, transparent 27%);
+    opacity: 0;
+    transition: all 0.3s;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1px;
+      height: 46px;
+      transform: translateY(-50%);
+      background-color: #ffffff;
+    } 
+    
+    &::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
+    
+  }
+
+  &__picture {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    line-height: 1.45;
+  }
+
+  &__description {
+    font-size: 14px;
+    color: $text-color-tertiary;
+    line-height: 1.57;
+  }
+}

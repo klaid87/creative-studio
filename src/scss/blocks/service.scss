@@ -1,4 +1,6 @@
 .service {
+  $self: &;
+
   padding: 100px 0;
 
   &__description {
@@ -24,11 +26,11 @@
     }
 
     &:hover {
-      .service__circle {
+      #{$self}__circle {
         background-color: $brand-color;
       }
 
-      .service__icon {
+      #{$self}__icon {
         fill: #ffffff;
       }
     }

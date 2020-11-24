@@ -1,0 +1,31 @@
+.clients {
+  padding: 195px 0 250px 0;
+
+  &__heading {
+    text-align: center;
+    color: $text-color-light;
+    line-height: 2;
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%; 
+    height: 162px;
+    padding: 20px 20px;
+    border: 2px solid #818181;
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

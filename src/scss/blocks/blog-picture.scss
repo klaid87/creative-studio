@@ -1,0 +1,36 @@
+.blog-picture {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 67px;
+    width: 44px;
+    height: 44px;
+  }
+
+  &--has-icon-frameworks {
+    &::before {
+        background: $brand-color url("../images/blog-picture/1-icon.png") no-repeat center;
+    }
+  }
+
+  &--has-icon-framework {
+    &::before {
+      background: $brand-color url("../images/blog-picture/2-icon.png") no-repeat center;
+    }
+  }
+
+  &--has-icon-film {
+    &::before {
+      background: $brand-color url("../images/blog-picture/3-icon.png") no-repeat center;
+    }
+  }
+
+  &--has-icon-headphones {
+    &::before {
+      background: $brand-color url("../images/blog-picture/4-icon.png") no-repeat center;
+    }
+  }
+} 
