@@ -7,7 +7,10 @@
   }
 
   &__column {
-    &:not(:last-of-type) {
+    // &:not(:last-of-type) {
+    //   margin-right: 60px;
+    // }
+    &:first-of-type {
       margin-right: 60px;
     }
   }

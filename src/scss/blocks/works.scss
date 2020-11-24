@@ -26,6 +26,8 @@
 
   &__overlay {
     position: absolute;
+    left: 0;
+    top: 0;
     width: 293px;
     height: 219px;
     background: rgba(255, 255, 255, 0.9) radial-gradient(circle, rgba(243, 156, 18, 0.5) 26%, transparent 27%);
