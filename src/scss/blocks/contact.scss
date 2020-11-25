@@ -9,9 +9,6 @@
   }
 
   &__column {
-    // &:not(:last-of-type) {
-    //   margin-right: 60px;
-    // }
     &:first-of-type {
       margin-right: 60px;
     }
@@ -44,7 +41,6 @@
     font-size: 15px;
     color: $text-color-tertiary;
     
-
     &:focus {
       border-color: $brand-color;
     }

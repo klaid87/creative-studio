@@ -17,7 +17,7 @@
     left: 0;
     background-image: linear-gradient(to right bottom, transparent 49%, #ffffff 50%);
     
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @include onlyIe {
       background-image: linear-gradient(to right bottom, transparent 50%, #ffffff 50%);
     }
   }
