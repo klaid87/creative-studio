@@ -16,6 +16,10 @@
     height: 100px;
     left: 0;
     background-image: linear-gradient(to right bottom, transparent 49%, #ffffff 50%);
+    
+    @include onlyIe {
+      background-image: linear-gradient(to right bottom, transparent 50%, #ffffff 50%);
+    }
   }
 
   &::before {
