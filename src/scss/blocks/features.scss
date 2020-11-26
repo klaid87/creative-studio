@@ -35,3 +35,9 @@
     }
   }
 }
+
+@media(max-width: $desktop-width) {
+  .features {
+    padding: 300px 0 185px 0;
+  }
+}
