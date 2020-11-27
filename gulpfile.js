@@ -82,6 +82,7 @@ gulp.task("watch", function() {
   gulp.watch("src/*.html", gulp.series("html"));
   gulp.watch("src/images/**/*.*", gulp.series("images"));
   gulp.watch("src/fonts/**/*.{woff,woff2}", gulp.series("copy:fonts"));
+  gulp.watch("src/js/**/*.js", gulp.series("scripts"));
 });
 
 gulp.task("clean", function() {

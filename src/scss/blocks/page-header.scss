@@ -22,7 +22,7 @@
     $self: &;
 
     &--menu-opened {
-      // background-color: #2d3c48;
+
       #{$self}__wrapper {
         position: relative;
       }
@@ -32,12 +32,12 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 50%;
+        width: 100%;
       }
     }
     
     &__wrapper {
-      padding-top: 30px;
+      padding-top: 60px;
     }
 
     &__button {
@@ -56,6 +56,7 @@
         width: 100%;
         height: 4px;
         background-color: #ffffff;
+        transition: all 0.3s;
       }
 
       &::before {
@@ -69,8 +70,6 @@
       }
 
       &--opened {
-        width: 30px;
-
         &::before {
           top: 50%;
           transform: translateY(-50%) rotate(45deg);
