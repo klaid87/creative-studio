@@ -36,8 +36,8 @@
   }
 }
 
-@media(max-width: $desktop-width) {
+@media(max-width: $tablet-width) {
   .features {
-    padding: 300px 0 185px 0;
+    padding: 300px 0 185px;
   }
 }

@@ -28,15 +28,19 @@
   }
 }
 
-@media(max-width: 1170px) {
+@media(max-width: 1200px) {
   .slider {
     &__heading {
       font-size: 60px;
     }
+
+    &__text {
+      font-size: 35px;
+    }
   }
 }
 
-@media(max-width: $desktop-width) {
+@media(max-width: $tablet-width) {
   .slider {
 
     &__text {

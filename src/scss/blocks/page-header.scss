@@ -5,6 +5,10 @@
   width: 100%;
   z-index: 10;
 
+  &__logo {
+    margin-right: 50px;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
@@ -17,16 +21,11 @@
   }
 }
 
-@media(max-width: $desktop-width) {
+@media(max-width: $tablet-width) {
   .page-header {
     $self: &;
 
     &--menu-opened {
-
-      #{$self}__wrapper {
-        position: relative;
-      }
-
       #{$self}__navigation {
         display: block;
         position: absolute;

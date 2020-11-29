@@ -1,6 +1,7 @@
 .navigation {
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -34,7 +35,7 @@
   }
 }
 
-@media(max-width: 1170px) {
+@media(max-width: 1200px) {
   .navigation {
     &__item {
       &:not(:last-child) {
@@ -45,7 +46,7 @@
   }
 }
 
-@media(max-width: $desktop-width) {
+@media(max-width: $tablet-width) {
   .navigation {
     display: none;
 
