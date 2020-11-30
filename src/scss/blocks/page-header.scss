@@ -15,34 +15,29 @@
     justify-content: space-between;
     padding-top: 75px;
   }
-
-  &__button {
-    display: none;
-  }
 }
 
 @media(max-width: $tablet-width) {
   .page-header {
-    $self: &;
-
-    &--menu-opened {
-      #{$self}__navigation {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-    }
-    
     &__wrapper {
+      position: relative;
       padding-top: 60px;
     }
 
-    &__button {
+    &__navigation {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    
+    &__burger {
       display: block;
       position: absolute;
       right: 20px;
+      top: 60%;
+      transform: translateY(-60%);
       width: 50px;
       height: 24px;
       outline: none;

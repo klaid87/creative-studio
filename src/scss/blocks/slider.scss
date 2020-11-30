@@ -35,7 +35,13 @@
     }
 
     &__text {
-      font-size: 35px;
+      &:first-of-type {
+        font-size: 35px;
+      }
+
+      &:last-of-type {
+        font-size: 30px;
+      }
     }
   }
 }
@@ -44,11 +50,17 @@
   .slider {
 
     &__text {
-      font-size: 25px;
+      &:first-of-type {
+        font-size: 25px;
+      }
+
+      &:last-of-type {
+        font-size: 20px;
+      }
     }
 
     &__heading {
-      font-size: 42px;
+      font-size: 40px;
     }
 
     &__link {
