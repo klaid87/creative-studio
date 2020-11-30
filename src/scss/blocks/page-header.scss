@@ -6,13 +6,16 @@
   z-index: 10;
 
   &__logo {
-    margin-right: 50px;
+    margin-right: auto;
+  }
+
+  &__navigation {
+    max-width: 810px;
   }
 
   &__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-top: 75px;
   }
 }
@@ -26,6 +29,7 @@
 
     &__navigation {
       position: absolute;
+      max-width: none;
       width: 100%;
       top: 0;
       left: 0;
