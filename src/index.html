@@ -110,8 +110,10 @@
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper">
-        <picture class="page-header__logo"> 
+        <picture class="page-header__logo">
+          <source type="image/webp" media="(max-width: 660px)" srcset="./images/page-header/logo-mobile.webp"> 
           <source type="image/webp" srcset="./images/page-header/logo.webp">
+          <source media="(max-width: 660px)" srcset="./images/page-header/logo-mobile.png">
           <img class="page-header__logo-image" src="./images/page-header/logo.png" alt="Logo Image">
         </picture>
         <nav class="page-header__navigation navigation">

@@ -41,3 +41,9 @@
     padding: 300px 0 185px;
   }
 }
+
+@media(max-width: $mobile-width) {
+  .features {
+    padding: 170px 0 120px;
+  }
+}

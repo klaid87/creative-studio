@@ -48,7 +48,6 @@
 
 @media(max-width: $tablet-width) {
   .slider {
-
     &__text {
       &:first-of-type {
         font-size: 25px;
@@ -65,6 +64,33 @@
 
     &__link {
       margin: 60px 0 80px;
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .slider {
+    &__text {
+      &:first-of-type {
+        font-size: 19px;
+        margin-bottom: 10px;
+      }
+
+      &:last-of-type {
+        font-size: 18px;
+      }
+    }
+
+    &__heading {
+      font-size: 22px;
+      margin-bottom: 10px;
+      letter-spacing: -2.8px;
+    }
+
+    &__link {
+      font-size: 10px;
+      padding: 8px 25px;
+      margin: 50px 60px;
     }
   }
 }

@@ -5,7 +5,7 @@
   }
 
   &__item {
-    &:not(:nth-child(6n + 6)) {
+    &:not(:last-child) {
       position: relative;
       padding-right: 42px;
       margin-right: 42px;
