@@ -38,12 +38,24 @@
 
 @media(max-width: $tablet-width) {
   .features {
+    background-image: url("../images/features/features-background-tablet.jpg");
+
+    @include retina {
+      background-image: url("../images/features/features-background-tablet@2x.jpg");
+    }
+    
     padding: 300px 0 185px;
   }
 }
 
 @media(max-width: $mobile-width) {
   .features {
+    background-image: url("../images/features/features-background-mobile.jpg");
+
+    @include retina {
+      background-image: url("../images/features/features-background-mobile@2x.jpg");
+    }
+
     padding: 170px 0 120px;
   }
 }
