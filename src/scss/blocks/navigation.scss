@@ -1,6 +1,7 @@
 .navigation {
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -30,6 +31,47 @@
 
     &:hover {
       color: #0d0d0d;
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .navigation {
+    &__item {
+      &:not(:last-child) {
+        padding-right: 30px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .navigation {
+    &__list {
+      flex-direction: column;
+      display: none;
+
+      &--opened {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 0 -15px;
+        padding: 20px 0;
+      }
+    }
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      padding: 5px 25px;
+
+      &:not(:last-child) {
+        margin: 0;
+      }
+
+      &::after {
+        display: none;
+      }
     }
   }
 }
