@@ -13,3 +13,11 @@
     }
   }
 }
+
+@media(max-width: $tablet-width) {
+  .row {
+    &__column {
+      max-width: none;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 .description {
   display: flex;
+  align-items: center;
   
   &__heading {
     margin-right: 20px;
@@ -18,6 +19,17 @@
       width: 4px;
       height: 100%;
       background-color: $brand-color;
+    }
+  }
+}
+@media(max-width: $tablet-width) {
+  .description {
+    &__heading {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 14px;
     }
   }
 }
