@@ -11,6 +11,10 @@
     &--size-m {
       max-width: 560px;
     }
+
+    &--unflexible {
+      flex-shrink: 0;
+    }
   }
 }
 

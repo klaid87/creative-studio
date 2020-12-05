@@ -33,3 +33,17 @@
     }
   }
 }
+
+@media(max-width: $mobile-width) {
+  .description {
+    flex-direction: column;
+
+    &__heading {
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
