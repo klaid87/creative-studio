@@ -123,6 +123,7 @@
       padding-left: 0;
       padding-top: 120px;
       margin-bottom: 50px;
+      max-width: 500px;
 
       &::before {
         left: 50%;
@@ -169,6 +170,7 @@
 
     &__text-block {
       padding-top: 105px;
+      max-width: 300px;
 
       &::before {
         width: 80px;
