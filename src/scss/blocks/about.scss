@@ -114,14 +114,6 @@
     &__column {
       margin-bottom: 30px;
 
-      &--order-1 {
-        order: 1;
-      }
-
-      &--order-2 {
-        order: 2;
-      }
-
       &:not(:last-of-type) {
         margin-right: 0;
       }

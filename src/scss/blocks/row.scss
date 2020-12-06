@@ -20,6 +20,10 @@
 
 @media(max-width: $tablet-width) {
   .row {
+    &--reverse {
+      flex-direction: column-reverse;
+    }
+
     &__column {
       max-width: none;
     }
