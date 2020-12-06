@@ -165,7 +165,7 @@
       </div>
     </section>
 
-    <!-- <section class="about">
+    <section class="about">
       <div class="container">
         <div class="about__description description">
           <h2 class="description__heading heading heading--size-xl">About</h2>
@@ -188,16 +188,18 @@
               </p>
             </div>
           </div>
-          <div class="row__column">
+          <div class="row__column row__column--unflexible">
             <picture class="about__picture picture">
               <source type="image/webp" srcset="./images/about/story.webp, ./images/about/story@2x.webp 2x">
               <img class="about__image" src="./images/about/story.jpg" srcset="./images/about/story@2x.jpg 2x" alt="picture of phone in hand">
             </picture>
           </div>
         </div>
-        <div class="about__row row">
-          <div class="about__column row__column">
+        <div class="about__row row row--reverse">
+          <div class="about__column row__column row__column--unflexible">
             <picture class="about__picture picture">
+              <source type="image/webp" media="(max-width: 960px)" srcset="./images/about/iPhone-tablet.webp">
+              <source media="(max-width: 960px)" srcset="./images/about/iPhone-tablet.png">
               <source type="image/webp" srcset="./images/about/iPhone.webp">
               <img class="about__image" src="./images/about/iPhone.jpg" alt="picture of phone and tablet">
             </picture>
@@ -241,7 +243,7 @@
       </div>
     </section>
 
-    <section class="post">
+    <!-- <section class="post">
       <h2 class="visually-hidden">Quotes of interesting people</h2>
       <div class="container">
         <blockquote class="quote">

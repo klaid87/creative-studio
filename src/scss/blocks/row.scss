@@ -11,5 +11,21 @@
     &--size-m {
       max-width: 560px;
     }
+
+    &--unflexible {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .row {
+    &--reverse {
+      flex-direction: column-reverse;
+    }
+
+    &__column {
+      max-width: none;
+    }
   }
 }
