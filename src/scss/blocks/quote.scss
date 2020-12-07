@@ -20,7 +20,8 @@
     &::after {
       position: absolute;
       font-size: 110px;
-      top: -10%;
+      line-height: 1;
+      top: 0;
     }
 
     &::before {
