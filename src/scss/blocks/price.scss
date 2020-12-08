@@ -39,10 +39,10 @@
         }
   
         #{$self}__title {
-        background-color: $brand-color;
-        color: #ffffff;
-        border-color: $brand-color;
-      }
+          background-color: $brand-color;
+          color: #ffffff;
+          border-color: $brand-color;
+        }
 
       #{$self}__title-package {
         &::before {
@@ -117,5 +117,31 @@
     font-weight: 600;
     color: #000000;
     margin: 20px 0;
+  }
+}
+
+@media(max-width: 1200px) {
+  .price {
+    &__title {
+      padding: 15px 60px;
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .price {
+    &__title {
+      font-size: 18px;
+      padding: 10px 50px;
+    }
+
+    &__cell {
+      font-size: 13px;
+    }
+
+    &__button {
+      padding: 5px 15px;
+      font-size: 12px;
+    }
   }
 }

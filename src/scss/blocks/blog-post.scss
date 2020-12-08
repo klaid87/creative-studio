@@ -41,3 +41,33 @@
     padding: 7px 20px;
   }
 }
+
+@media(max-width: 1200px) {
+  .blog-post {
+    &__info {
+      flex-shrink: 0;
+    }
+
+    &__container {
+      position: static;
+    }
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .blog-post {
+    flex-direction: column;
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__info {
+      align-items: flex-start;
+    }
+  }
+}

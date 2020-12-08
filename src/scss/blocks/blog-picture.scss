@@ -33,4 +33,12 @@
       background: $brand-color url("../images/blog-picture/4-icon.png") no-repeat center;
     }
   }
-} 
+}
+
+@media(max-width: 1200px) {
+  .blog-picture {
+    &::before {
+      left: 0;
+    }
+  }
+}

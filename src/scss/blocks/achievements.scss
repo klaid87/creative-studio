@@ -54,3 +54,38 @@
     line-height: 1.25px;
   }
 }
+
+@media(max-width: $tablet-width) {
+  .achievements {
+    padding: 160px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+      margin: 0 50px 40px;
+    }
+
+    &__circle {
+      width: 120px;
+      height: 120px;
+    }
+
+    &__number {
+      font-size: 35px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .achievements {
+    padding: 130px 0;
+
+    &__item {
+      margin: 0 25px 30px;
+    }
+  }
+}
