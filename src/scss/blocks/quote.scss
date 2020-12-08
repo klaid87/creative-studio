@@ -1,5 +1,4 @@
 .quote {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +6,7 @@
   padding: 245px 0;
   font-weight: 700;
   color: $text-color-light;
-  max-width: 960px;
+  max-width: 1085px;
 
   &__text {
     position: relative;
@@ -15,21 +14,22 @@
     text-align: center;
     margin-bottom: 30px;
     max-width: 100%;
+    padding: 0 60px;
 
     &::before,
     &::after {
       position: absolute;
       font-size: 110px;
-      top: 50px;
-      line-height: 0;
+      line-height: 1;
+      top: -10px;
     }
 
     &::before {
-      left: -70px
+      left: 0;
     }
 
     &::after {
-      right: -70px;
+      right: 0;
     }
   }
 
@@ -54,6 +54,47 @@
     &--line-bottom {
       &::before {
         top: 60px;
+      }
+    }
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .quote {
+    padding: 175px 0;
+
+    &__text {
+      font-size: 35px;
+
+      &::before,
+      &::after {
+        font-size: 80px;
+      }
+    }
+
+    &__author {
+      font-size: 20px;
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .quote {
+    &__text {
+      font-size: 16px;
+      padding: 0 20px;
+
+      &::before,
+      &::after {
+        font-size: 30px;
+      }
+    }
+
+    &__author {
+      font-size: 14px;
+
+      &::before {
+        height: 3px;
       }
     }
   }
