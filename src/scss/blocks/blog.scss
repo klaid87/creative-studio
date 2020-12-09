@@ -22,6 +22,14 @@
   }
 }
 
+@media(max-width: 1200px) {
+  .blog {
+    &__post {
+      flex-direction: column;
+    }
+  }
+}
+
 @media(max-width: $tablet-width) {
   .blog {
     padding: 80px 0;
@@ -45,6 +53,14 @@
     }
 
     &__item {
+      width: 100%;
+    }
+
+    &__picture {
+      width: 100%;
+    }
+
+    &__image {
       width: 100%;
     }
   }
