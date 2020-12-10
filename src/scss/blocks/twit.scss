@@ -37,3 +37,19 @@
     color: $text-color-tertiary;
   }
 }
+
+@media(max-width: $tablet-width) {
+  .twit {
+    padding: 160px 0;
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .twit {
+    padding: 100px 0;
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}

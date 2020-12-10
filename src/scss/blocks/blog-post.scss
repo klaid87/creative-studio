@@ -41,3 +41,45 @@
     padding: 7px 20px;
   }
 }
+
+@media(max-width: 1200px) {
+  .blog-post {
+    &__info {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    &__container {
+      position: static;
+      padding: 0;
+    }
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .blog-post {
+    flex-direction: column;
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__info {
+      align-items: flex-start;
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .blog-post {
+    &__container {
+      max-width: none;
+      text-align: center;
+    }
+  }
+}

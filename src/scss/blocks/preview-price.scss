@@ -9,3 +9,28 @@
     color: $text-color-secondary;
   }
 }
+
+@media(max-width: $tablet-width) {
+  .preview-price {
+    &__title {
+      display: block;
+      text-align: center;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .preview-price {
+    &__title {
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}

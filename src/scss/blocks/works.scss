@@ -68,3 +68,31 @@
     line-height: 1.57;
   }
 }
+
+@media(max-width: 1200px) {
+  .works {
+    &__item {
+      width: 33.333%;
+    }
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .works {
+    &__item {
+      width: 50%;
+    }
+
+    &__overlay {
+      display: none;
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .works {
+    &__item {
+      width: 100%;
+    }
+  }
+}

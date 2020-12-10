@@ -74,6 +74,12 @@
 
     &__author {
       font-size: 20px;
+
+      &--line-bottom {
+        &::before {
+          top: 45px
+        }
+      } 
     }
   }
 }
@@ -81,7 +87,7 @@
 @media(max-width: $mobile-width) {
   .quote {
     &__text {
-      font-size: 16px;
+      font-size: 20px;
       padding: 0 20px;
 
       &::before,

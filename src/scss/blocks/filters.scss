@@ -32,3 +32,17 @@
     color: $brand-color;
   }
 }
+
+@media(max-width: $tablet-width) {
+  .filters {
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    &__item {
+      &:not(:last-child) {
+        padding-right: 25px;
+        margin-right: 10px;
+      }
+    }
+  } 
+}
