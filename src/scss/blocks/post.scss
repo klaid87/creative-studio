@@ -32,7 +32,8 @@
   }
 
   &--other-bg {
-    background-image: none;
+    background: url("../images/location/map.png") no-repeat center;
+    box-shadow: none;
   }
 }
 
@@ -42,6 +43,11 @@
   
     @include retina {
       background-image: url("../images/post/post-bg-tablet@2x.jpg");
+    }
+
+    &--other-bg {
+      background: url("../images/location/map.png") no-repeat center;
+      box-shadow: none;
     }
   }
 }
@@ -53,10 +59,15 @@
     @include retina {
       background-image: url("../images/post/post-bg-mobile@2x.jpg");
     }
+
+    &--other-bg {
+      background: url("../images/location/map.png") no-repeat center;
+      box-shadow: none;
+    }
   }
 }
 
-@media(max-width: 480px) {
+@media(max-width: 550px) {
   .post {
     &::before,
     &::after {

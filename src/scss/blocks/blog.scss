@@ -26,6 +26,7 @@
   .blog {
     &__post {
       flex-direction: column;
+      padding-bottom: 50px;
     }
   }
 }
@@ -39,7 +40,7 @@
     }
 
     &__post {
-      padding-bottom: 50px;
+      padding-bottom: 0;
     }
   }
 } 
