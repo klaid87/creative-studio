@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 35px 0 100px 0;
+  padding: 35px 0 100px;
 
   &__body {
     display: flex;
@@ -20,7 +20,7 @@
 
 @media(max-width: $tablet-width) {
   .page-footer {
-    padding:10px 0 80px 0;
+    padding:10px 0 80px;
 
     &__body {
       flex-direction: column;

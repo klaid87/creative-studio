@@ -4,8 +4,7 @@
   background-size: cover;
   
   @include retina {
-    background: url("../images/post/post-bg@2x.jpg") repeat-y center;
-    background-size: cover;
+    background: url("../images/post/post-bg@2x.jpg");
   }
   
   box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.25);
@@ -33,7 +32,7 @@
     bottom: 0;
   }
 
-  &--other-bg {
+  &--bg-map {
     background: url("../images/location/map.png") no-repeat center;
     box-shadow: none;
   }
@@ -42,14 +41,12 @@
 @media(max-width: $tablet-width) {
   .post {
     background: url("../images/post/post-bg-tablet.jpg") repeat-y center;
-    background-size: cover;
   
     @include retina {
-      background: url("../images/post/post-bg-tablet@2x.jpg") repeat-y center;
-      background-size: cover;
+      background: url("../images/post/post-bg-tablet@2x.jpg");
     }
 
-    &--other-bg {
+    &--bg-map {
       background: url("../images/location/map.png") no-repeat center;
       box-shadow: none;
     }
@@ -59,14 +56,12 @@
 @media(max-width: $mobile-width) {
   .post {
     background: url("../images/post/post-bg-mobile.jpg") repeat-y center;
-    background-size: cover;
   
     @include retina {
-      background: url("../images/post/post-bg-mobile@2x.jpg") repeat-y center;
-      background-size: cover;
+      background: url("../images/post/post-bg-mobile@2x.jpg");
     }
 
-    &--other-bg {
+    &--bg-map {
       background: url("../images/location/map.png") no-repeat center;
       box-shadow: none;
     }
