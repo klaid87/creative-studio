@@ -1,9 +1,7 @@
 .post {
   position: relative;
-  background-image: url("../images/post/post-bg.jpg");
+  background: url("../images/post/post-bg.jpg") repeat-y center;
   background-size: cover;
-  background-repeat: repeat-y;
-  background-position: center;
   
   @include retina {
     background-image: url("../images/post/post-bg@2x.jpg");
